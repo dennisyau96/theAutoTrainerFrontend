@@ -1,0 +1,88 @@
+.scroll-watcher {
+  height: 0.6vh;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  transform-origin: center;
+  /* box-shadow: 5px 4px white 0.5; */
+}
+
+@keyframes scroll-watcher {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+
+  100% {
+    scale: 1 1;
+    background-color: rgb(89, 175, 43);
+  }
+}
+
+.headerTitle {
+  animation: headerTitleFade;
+  animation-timeline: scroll();
+}
+
+@keyframes headerTitleFade {
+  0% {
+    scale: 1 1;
+  }
+  100% {
+    scale: 0.5 0.5;
+    transition: ease;
+    transform: translateX(-100px);
+    transform: translateY(-100px);
+    opacity: 30%;
+  }
+}
+
+.PA1 {
+  animation: PASlide;
+  animation-timeline: scroll();
+  animation-delay: 2s;
+  background-color: rgb(26, 46, 221);
+}
+
+.PA2 {
+  animation: PASlide;
+  animation-timeline: scroll();
+  background-color: rgb(26, 101, 221);
+}
+
+.PA3 {
+  animation: PASlide;
+  animation-timeline: scroll();
+  background-color: rgb(26, 127, 221);
+}
+
+@keyframes PASlide {
+  0% {
+    transform: translateX(30vw);
+    opacity: 0%;
+    color: white;
+  }
+  10% {
+    transform: translateX(5vw);
+    opacity: 100%;
+  }
+  50% {
+    transform: translateX(0vw);
+    opacity: 100%;
+  }
+  95% {
+    transform: translateX(0vw);
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    transform: translateX(-10vw);
+
+    color: white;
+  }
+}

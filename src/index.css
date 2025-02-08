@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  transition-delay: 300ms;
+  transition: all;
+}
+Link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* class selector*/
+.root {
+  width: 100%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.headerTitle {
+  font-size: 40px;
+  line-height: 40px;
+  max-width: 100px;
+  text-wrap: wrap;
+  text-align: justify;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+.nav-item {
+  display: inline;
+}
+.shrinkNavBtn {
+  text-align: center;
+}
+
+.programAdvantageCard {
+  border-radius: 5 5;
+}
+
+/* id selector */
+#mainContent {
+  min-height: 100vh;
+}
+#footerDiv {
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+}
+#shrink-nav-btn:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+#HeaderDiv {
+  width: 100%;
+}
+@keyframes scroll-watcher {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+
+  100% {
+    scale: 1 1;
+    background-color: rgb(173, 42, 42);
+  }
+}
+
+/* media */
+
+@media (min-width: 480px) {
+  #shrink-nav {
+    display: block;
+  }
+  #full-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  #shrink-nav {
+    display: block;
+  }
+  #full-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  #shrink-nav {
+    display: none;
+  }
+  #full-nav {
+    display: block;
+  }
+}
