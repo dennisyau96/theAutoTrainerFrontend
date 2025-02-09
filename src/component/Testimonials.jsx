@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   return (
     <div className="justify-items-center">
-      <h1>Testimonials</h1>
+      <h1 className="pageTitle"> Testimonials</h1>
       <div
         id="carouselExampleIndicators"
         className="carousel slide w-50 h-auto jusify-contents-center "

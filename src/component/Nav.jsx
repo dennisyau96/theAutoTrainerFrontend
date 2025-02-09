@@ -8,23 +8,25 @@ function Nav() {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg m-0 p-0 flex-wrap text-right justify-content-end sticky-top bg-slate-200">
-        <div className=" flex " id="full-nav">
-          <ul className="navbar-nav flex-wrap ">
+      <nav className="navbar navbar-expand-lg m-0 p-0 flex-wrap  sticky-top bg-slate-200 ">
+        <div
+          className="justify-self-left px-2  w-10  w-50 text-top navTitleIcon"
+          id="navTitle"
+        >
+          The Auto Trainer
+        </div>
+        <div
+          className=" flex   w-50 text-right justify-items-end"
+          id="full-nav"
+        >
+          <ul className="navbar-nav ">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link
+                className="nav-link  active:text-blue-500 active:text-bold"
+                aria-current="page"
+                to="/"
+              >
                 Home
-              </Link>
-            </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link " to="/reviews">
-                Google Reviews
-              </Link>
-            </li> */}
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/testimonials">
-                Testmonials
               </Link>
             </li>
 
@@ -33,6 +35,13 @@ function Nav() {
                 Programs
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/testimonials">
+                Testmonials
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link className="nav-link " aria-disabled="true" to="about">
                 About

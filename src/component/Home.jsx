@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className="text-center min-vh-100">
-        <h1>The Auto Trainer - Paul Iacobazzi</h1>
+        <h1 className="pageTitle">The Auto Trainer - Paul Iacobazzi</h1>
         <section id="homeSection1" className="pt-10">
           <h2>Background</h2>
         </section>

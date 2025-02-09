@@ -19,7 +19,28 @@
 
   100% {
     scale: 1 1;
-    background-color: rgb(89, 175, 43);
+  }
+}
+
+.navTitleIcon {
+  animation: navTitleIconAnm;
+  animation-timeline: scroll();
+  font-weight: bolder;
+}
+@keyframes navTitleIconAnm {
+  0% {
+    opacity: 0%;
+    transform: translateX(-30vw);
+  }
+  20% {
+    transform: translateX(0vw);
+  }
+  30% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    color: black;
   }
 }
 
@@ -41,32 +62,36 @@
   }
 }
 
-.PA1 {
-  animation: PASlide;
+.PA {
+  color: white;
+  min-width: 200px;
+  animation-name: PASlide;
   animation-timeline: scroll();
-  animation-delay: 2s;
-  background-color: rgb(26, 46, 221);
+  color: white;
+}
+
+.PA1 {
+  background-color: rgb(18, 33, 169);
 }
 
 .PA2 {
-  animation: PASlide;
-  animation-timeline: scroll();
   background-color: rgb(26, 101, 221);
 }
 
 .PA3 {
-  animation: PASlide;
-  animation-timeline: scroll();
-  background-color: rgb(26, 127, 221);
+  background-color: rgb(30, 142, 246);
 }
 
 @keyframes PASlide {
   0% {
-    transform: translateX(30vw);
+    transform: translateX(50vw);
     opacity: 0%;
-    color: white;
   }
-  10% {
+  20% {
+    transform: translateX(50vw);
+    opacity: 100%;
+  }
+  /* 10% {
     transform: translateX(5vw);
     opacity: 100%;
   }
@@ -77,12 +102,91 @@
   95% {
     transform: translateX(0vw);
     opacity: 100%;
+  } */
+
+  90% {
+    opacity: 100%;
+    transform: translateX(-30vw);
+  }
+  100% {
+    opacity: 0%;
+    transform: translateX(-30vw);
+  }
+}
+
+.teachItem {
+  width: 30vw;
+  height: auto;
+  min-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px 25px;
+  border-width: 1px;
+  text-align: justify;
+  background-color: antiquewhite;
+  animation-timing-function: linear;
+  animation-timeline: scroll();
+  animation: teachItemsAnm;
+  padding: 20px;
+  line-height: 2vwpx;
+}
+
+@keyframes teachItemsAnm {
+  0% {
+    opacity: 10%;
+    transform: translateY(-30vw);
+  }
+  30% {
+    opacity: 100%;
+    transform: translateY(0vw);
+  }
+  90% {
+    opacity: 100%;
+    transform: translateY(0vw);
   }
 
   100% {
-    opacity: 0%;
-    transform: translateX(-10vw);
+    opacity: 10%;
+    transform: translateY(30vw);
+  }
+}
 
-    color: white;
+.navTitle {
+  animation-timeline: scroll();
+  animation: navTitleAnm;
+}
+@keyframes navTitleAnm {
+  0% {
+    opacity: 0%;
+    color: aqua;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    color: black;
+  }
+}
+
+#introVideoDiv {
+  width: 100vw;
+  background-color: bisque;
+}
+@keyframes introVideoDivAnm {
+}
+
+.pageTitle {
+  animation: pageTitleAnm;
+  animation-duration: 1.5s;
+}
+
+@keyframes pageTitleAnm {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0vh);
+    opacity: 100%;
   }
 }

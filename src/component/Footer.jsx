@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <>
       <div
-        className=" bg-gray-400 footerDiv botton-0 inset-x-0 text-center justify-center right-0 left-0 h-10/12  theme2 m-0  footer w-full   px-3 pt-3 block"
+        className=" bg-slate-200 footerDiv botton-0 inset-x-0 text-center justify-center right-0 left-0 h-10/12  theme2 m-0  footer w-full   px-3 pt-3 block"
         id="footerDiv"
       >
         <div className="h-1/6 ">
-          <NavLink to="/" className="vis">
+          <Link to="/" className=" hover:font-bold text-black footerTitle">
             The Auto Trainer
-          </NavLink>
+          </Link>
           <div className="flex flex-wrap text-center justify-center">
             <Link
               target="_blank"
@@ -25,9 +25,9 @@ const Footer = () => {
                   navigate(0);
                 }
               }}
-              to="https://www.instagram.com/den.y_photography/?igsh=djJ6MGR1Ynh4enRt&utm_source=qr"
+              to="/"
             >
-              <i className="fa fa-instagram m-2 text-white"></i>
+              <i className="fa fa-instagram m-2 text-white gradientFont"></i>
             </Link>
             <Link
               target="_blank"
@@ -39,24 +39,9 @@ const Footer = () => {
                   navigate(0);
                 }
               }}
-              to="https://www.linkedin.com/in/dennis-yau-314755248/"
+              to="https://www.linkedin.com/in/paul-iacobazzi-069aa85b/"
             >
-              <i className="fa fa-linkedin m-2 text-white"></i>
-            </Link>
-
-            <Link
-              target="_blank"
-              onClick={() => {
-                const ctr = confirm(
-                  "You will be redirected to the GitHub website"
-                );
-                if (!ctr) {
-                  navigate(0);
-                }
-              }}
-              to="https://github.com/dennisyau96"
-            >
-              <i className="fa fa-github m-2 text-white"></i>
+              <i className="fa fa-linkedin m-2 text-blue-600"></i>
             </Link>
           </div>
           <div className="text-right h-fit">

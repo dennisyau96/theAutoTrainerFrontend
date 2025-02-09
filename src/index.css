@@ -19,14 +19,12 @@ Link {
 a:visited {
   text-decoration: none;
 }
-
+iframe {
+  width: 100px;
+}
 /* class selector*/
 .root {
   width: 100%;
-}
-
-.nav-link {
-  color: white;
 }
 
 .headerTitle {
@@ -53,13 +51,16 @@ a:visited {
 #mainContent {
   min-height: 100vh;
 }
+
+#introVideo {
+  width: 100%;
+}
 #footerDiv {
   width: 100%;
   bottom: 0px;
   text-align: center;
 }
 #shrink-nav-btn:hover {
-  background-color: rgba(100, 100, 100, 0.5);
 }
 #HeaderDiv {
   width: 100%;
@@ -102,4 +103,15 @@ a:visited {
   #full-nav {
     display: block;
   }
+}
+
+.gradientFont {
+  background-image: linear-gradient(to right, #be0acb, #d11a0a, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footerTitle {
+  text-align: justify;
 }

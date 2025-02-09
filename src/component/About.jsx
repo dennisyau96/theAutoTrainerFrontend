@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div className="justify-items-center ">
-        <h1 className="">About</h1>
+        <h1 className="pageTitle">About</h1>
       </div>
     </>
   );
