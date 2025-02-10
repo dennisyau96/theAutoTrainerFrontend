@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <div className="w-screen" id="app">
-        <div className="scroll-watcher"></div>
+        <div className="scroll-watcher "></div>
 
         <Header />
         <Nav />

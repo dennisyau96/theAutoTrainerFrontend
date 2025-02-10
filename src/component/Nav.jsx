@@ -8,42 +8,43 @@ function Nav() {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg m-0 p-0 flex-wrap  sticky-top bg-slate-200 ">
+      <nav className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top bg-slate-200 ">
         <div
-          className="justify-self-left px-2  w-10  w-50 text-top navTitleIcon"
+          className="justify-self-left px-2  h-100 w-50 text-top navTitleIcon"
           id="navTitle"
         >
           The Auto Trainer
         </div>
-        <div
-          className=" flex   w-50 text-right justify-items-end"
-          id="full-nav"
-        >
-          <ul className="navbar-nav ">
-            <li className="nav-item">
-              <Link
-                className="nav-link  active:text-blue-500 active:text-bold"
+        <div className="   w-50  px-3" id="full-nav">
+          <ul className="navbar-nav flex-row gap-3 justify-content-end px-2">
+            <li className="nav-item ">
+              <NavLink
+                className="nav-link  active:text-blue-500 active:text-bold navBtn"
                 aria-current="page"
                 to="/"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
 
-            <li className="nav-item  rounded-4 ">
-              <Link className="nav-link " to="/programs">
+            <li className="nav-item  rounded-4  ">
+              <NavLink className="nav-link navBtn" to="/programs">
                 Programs
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/testimonials">
+              <NavLink className="nav-link navBtn" to="/testimonials">
                 Testmonials
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link " aria-disabled="true" to="about">
+              <Link
+                className="nav-link  navBtn"
+                aria-disabled="true"
+                to="about"
+              >
                 About
               </Link>
             </li>
@@ -54,7 +55,7 @@ function Nav() {
           id="shrink-nav"
         >
           <button
-            className=" navbar-toggler text-gray-200 py-1 px-1 pointer-cursor transition-all duration-500"
+            className=" navbar-toggler text-gray-200 py-1 px-1 pointer-cursor transition-all duration-1000 active:border-0"
             id="shrink-nav-btn"
             onClick={() => toggle()}
           >
@@ -63,13 +64,13 @@ function Nav() {
           {collapsed ? null : (
             <div
               id="dropDownList"
-              className=" mt-1 transition-all duration-500 dropDownList py-2 "
+              className=" mt-1  dropDownList py-2 transition-all duration-1000"
               aria-expanded="false"
             >
               <ul className="flex-wrap">
                 <li>
                   <NavLink
-                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item "
+                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item navBtn"
                     to="/"
                     onClick={() => toggle()}
                   >
@@ -77,22 +78,22 @@ function Nav() {
                   </NavLink>
                 </li>
                 <li>
-                  <Link
-                    className="     shrinkNavBtn dropdown-item"
+                  <NavLink
+                    className="     shrinkNavBtn dropdown-item navBtn"
                     to="/reviews"
                     onClick={() => toggle()}
                   >
                     Google Reviews
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
-                    className="  shrinkNavBtn dropdown-item"
+                  <NavLink
+                    className="  shrinkNavBtn dropdown-item navBtn"
                     to="/testimonials"
                     onClick={() => toggle()}
                   >
                     Testimonials
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li className="">

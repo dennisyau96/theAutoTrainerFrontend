@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   /* display: flex; */
@@ -72,7 +74,7 @@ iframe {
 
   100% {
     scale: 1 1;
-    background-color: rgb(173, 42, 42);
+    background-color: rgb(48, 200, 37);
   }
 }
 
@@ -89,10 +91,10 @@ iframe {
 
 @media (min-width: 640px) {
   #shrink-nav {
-    display: block;
+    display: none;
   }
   #full-nav {
-    display: none;
+    display: block;
   }
 }
 
@@ -114,4 +116,13 @@ iframe {
 
 .footerTitle {
   text-align: justify;
+}
+
+.sucessfulStory {
+  border-width: 1px;
+  padding: 3vw;
+}
+
+.storyName {
+  font-size: 2rem;
 }

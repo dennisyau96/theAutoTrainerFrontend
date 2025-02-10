@@ -124,7 +124,7 @@
   text-align: justify;
   background-color: antiquewhite;
   animation-timing-function: linear;
-  animation-timeline: scroll();
+  animation-timeline: view();
   animation: teachItemsAnm;
   padding: 20px;
   line-height: 2vwpx;
@@ -151,8 +151,9 @@
 }
 
 .navTitle {
-  animation-timeline: scroll();
+  animation-timeline: view();
   animation: navTitleAnm;
+  animation-timing-function: ease-in-out;
 }
 @keyframes navTitleAnm {
   0% {
@@ -160,7 +161,10 @@
     color: aqua;
   }
   50% {
-    opacity: 100%;
+    opacity: 0%;
+  }
+  80% {
+    opacity: 200%;
   }
   100% {
     opacity: 100%;
@@ -187,6 +191,111 @@
   }
   100% {
     transform: translateY(0vh);
+    opacity: 100%;
+  }
+}
+
+.subtitleA {
+  animation-name: subtitleAAnm;
+  animation-timeline: view();
+}
+.subtitleB {
+  animation-name: subtitleBAnm;
+  animation-timeline: view();
+}
+
+@keyframes subtitleAAnm {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes subtitleBAnm {
+  0% {
+    transform: translateX(100px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+.sucessfulStory {
+  border-width: 1px;
+  padding: 3vw;
+  margin-top: 20px;
+  animation-name: sucessfulStoryAnm;
+  animation-timeline: view();
+  z-index: 99900;
+  background-color: aliceblue;
+}
+@keyframes sucessfulStoryAnm {
+  0% {
+    transform: translateY(30px);
+    opacity: 0%;
+    scale: 0.8;
+  }
+  30% {
+    opacity: 100%;
+    scale: 1;
+  }
+  70% {
+    opacity: 100%;
+    scale: 1;
+  }
+  100% {
+    transform: translatex(-10px);
+    opacity: 0%;
+    scale: 0.9;
+  }
+}
+
+.storyPic {
+  animation-name: storyPicAnm;
+  animation-timeline: view(10vh);
+}
+
+@keyframes storyPicAnm {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0vw);
+    opacity: 100%;
+  }
+}
+.storyName {
+  animation-name: storyNameAnm;
+  animation-timeline: view();
+}
+@keyframes storyNameAnm {
+  0% {
+    transform: translateX(20vw);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0vw);
+    opacity: 100%;
+  }
+}
+.storyDetail {
+  animation-name: storyDetailAnm;
+  animation-timeline: view();
+}
+@keyframes storyDetailAnm {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0vw);
     opacity: 100%;
   }
 }
