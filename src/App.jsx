@@ -22,7 +22,7 @@ const App = () => {
         <Header />
         <Nav />
 
-        <div id="mainContent" className="py-10 px-10 h-100">
+        <div id="mainContent" className="  h-100">
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />

@@ -67,15 +67,15 @@ iframe {
 #HeaderDiv {
   width: 100%;
 }
-@keyframes scroll-watcher {
-  0% {
-    background-color: rgb(255, 255, 255);
-  }
 
-  100% {
-    scale: 1 1;
-    background-color: rgb(48, 200, 37);
-  }
+#landingPage {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgb(214, 196, 196);
+  display: block;
+  align-items: center;
+  align-content: center;
 }
 
 /* media */
