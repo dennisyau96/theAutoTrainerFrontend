@@ -7,7 +7,8 @@ const Header = () => {
     <>
       <header className=" px-4 py-2 bg-slate-200" id="headerDiv">
         <Link className="navbar-brand block " to="/">
-          <div className="headerTitle">The Auto Trainer</div>
+          {/* <div className="headerTitle">The Auto Trainer</div> */}
+          {/* <img src="../public/auto-logo.png" className="headerTitle"></img> */}
         </Link>
       </header>
     </>

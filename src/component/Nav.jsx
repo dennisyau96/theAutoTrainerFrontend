@@ -10,7 +10,7 @@ function Nav() {
     <>
       <nav className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top bg-slate-200 ">
         <div
-          className="justify-self-left px-2  h-100 w-50 text-top navTitleIcon"
+          className="justify-self-left px-2   w-50 text-top navTitleIcon "
           id="navTitle"
         >
           The Auto Trainer
