@@ -1,6 +1,9 @@
 import React from "react";
-
+import { useEffect } from "react";
 const Testimonials = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="justify-items-center">
       <h1 className="pageTitle"> Testimonials</h1>

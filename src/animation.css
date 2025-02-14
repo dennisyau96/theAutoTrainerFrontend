@@ -6,9 +6,10 @@
   background-color: rgb(255, 255, 255);
   width: 100%;
   scale: 0 1;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
+  -webkit-animation-name: scroll-watcher;
+  -webkit-animation-timeline: scroll();
   transform-origin: center;
+
   /* box-shadow: 5px 4px white 0.5; */
 }
 
@@ -24,6 +25,18 @@
     background-color: rgb(6, 243, 89);
   }
 }
+@-webkit-keyframes scroll-watcher {
+  0% {
+    -webkit-background-color: rgb(255, 255, 255);
+  }
+  40% {
+    -webkit-background-color: rgb(43, 85, 235);
+  }
+  100% {
+    -webkit-scale: 1 1;
+    -webkit-background-color: rgb(6, 243, 89);
+  }
+}
 
 .navTitleIcon {
   animation: navTitleIconAnm;
@@ -33,9 +46,11 @@
 @keyframes navTitleIconAnm {
   0% {
     opacity: 0%;
-    transform: translateX(-150vw);
+    transform: translateX(-2500px);
   }
   10% {
+    opacity: 100%;
+
     transform: translateX(-0vw);
   }
   30% {
@@ -153,7 +168,7 @@
   }
 }
 
-.navTitle {
+/* .navTitle {
   animation-timeline: view();
   animation-name: navTitleAnm;
 }
@@ -164,14 +179,14 @@
   50% {
     opacity: 0%;
   }
-  80% {
+  90% {
     opacity: 100%;
   }
   100% {
     opacity: 100%;
     color: black;
   }
-}
+} */
 
 #introVideoDiv {
   width: 100vw;
@@ -238,26 +253,30 @@
   max-width: 1000px;
   justify-self: center;
   border: none;
+  border-radius: 25px;
+  box-shadow: 15px 15px 15px rgb(242, 241, 241);
 }
 @keyframes sucessfulStoryAnm {
   0% {
-    transform: translateY(30px);
+    transform: translateY(100px);
     opacity: 0%;
     scale: 0.8;
+    background-color: rgba(100, 198, 255, 0.073);
   }
   10% {
     opacity: 100%;
     scale: 1;
   }
   80% {
-    opacity: 100%;
+    opacity: 90%;
     scale: 1;
   }
   100% {
-    transform: translatex(-10px);
+    transform: translateY(-10px);
     opacity: 0%;
-    scale: 0.9;
+    scale: 0.7;
     background-image: radial-gradient(gray white);
+    background-color: rgba(139, 246, 150, 0.11);
   }
 }
 
@@ -267,7 +286,8 @@
   justify-items: center;
   display: block;
   position: static;
-  height: fit-content;
+  height: auto;
+  width: auto;
 }
 .storyPicB {
   animation-name: storyPicBAnm;
@@ -275,7 +295,8 @@
   animation-timeline: view();
   display: block;
   position: static;
-  height: fit-content;
+  height: auto;
+  width: auto;
 }
 
 @keyframes storyPicAAnm {
@@ -353,10 +374,13 @@
   animation-name: landingPageTitleAnm;
   animation-duration: 0.7s;
   display: inline-block;
-  left: 5%;
-  top: 15%;
-  color: white;
+  margin: 20px;
+
+  color: black;
+
   font-variant: small-caps;
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 @keyframes landingPageTitleAnm {
   0% {
@@ -367,13 +391,13 @@
     opacity: 100%;
   }
 }
-
+/* 
 .LPintroPara {
   text-align: left;
   justify-items: left;
   top: 20%;
   left: 10%;
-}
+} */
 @keyframes LPintroParaAnm {
   0% {
     opacity: 0%;
@@ -392,9 +416,11 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0%;
-  font-size: 35px;
-  line-height: 30px;
-  max-width: 50vw;
+  font-size: 5vh;
+  line-height: 5vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+
   color: rgb(255, 255, 255);
 }
 .LPPB {
@@ -407,9 +433,11 @@
   opacity: 0%;
   font-size: 20px;
   font-style: italic;
-  line-height: 30px;
-  max-width: 50vw;
+  line-height: 35px;
   color: white;
+  text-align: justify;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .LPPC {
   animation-name: LPPAAnm;
@@ -419,11 +447,12 @@
   opacity: 0%;
   display: flex;
   flex-wrap: wrap;
+  text-align: justify;
+
   font-size: 35px;
   color: white;
-
-  line-height: 35px;
-  max-width: 50vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 40px;
 }
 @keyframes LPPAAnm {
   0% {
@@ -437,16 +466,73 @@
 
 .LPPBtn {
   font-size: 2rem;
-  top: 20%;
-  left: -35%;
-  color: black;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border-width: 2px;
+  border-color: white;
+  animation-name: LPPBtnAnm;
+  animation-duration: 4s;
+}
+@keyframes LPPBtnAnm {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.LPPBtn:hover {
+  font-size: 2rem;
+  color: rgb(45, 42, 242);
+  text-decoration: none;
+  border-width: 3px;
+  border-color: rgb(83, 83, 83);
+  scale: 1.1;
+}
+
+.LPPBtn > NavLink {
   text-decoration: none;
 }
 
 .LPLogo {
-  top: 10%;
-  position: relative;
-  left: 10%;
   animation-name: landingPageTitleAnm;
   animation-duration: 0.7s;
+}
+
+.headerLogo {
+  animation-name: headerLogoAnm;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes headerLogoAnm {
+  0% {
+    opacity: 0%;
+    transform: translateX(-5vh);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.dropDownList {
+  animation-name: dropDownListAnm;
+  animation-duration: 0.5s;
+}
+
+.shrink-nav {
+  animation-name: dropDownListAnm;
+  animation-duration: 0.5s;
+}
+@keyframes dropDownListAnm {
+  0% {
+    opacity: 0%;
+    transform: translateY(-10vh);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0vh);
+  }
 }

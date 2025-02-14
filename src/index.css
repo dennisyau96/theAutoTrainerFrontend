@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,9 +18,29 @@ body {
 }
 Link {
   text-decoration: none;
+  color: white;
+}
+NavLink {
+  text-decoration: none;
+  color: white;
 }
 a:visited {
   text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 iframe {
   width: 100px;
@@ -68,18 +89,20 @@ iframe {
 }
 
 #landingPage {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: block;
   background-image: linear-gradient(
     to right,
-    rgb(48, 74, 223),
-    rgb(155, 169, 231)
+    rgb(151, 191, 255),
+    rgb(85, 127, 191)
   );
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: 10%;
+}
+
+#shrinkHeaderIcon {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.5rem;
 }
 
 /* media */
@@ -90,6 +113,34 @@ iframe {
   }
   #full-nav {
     display: none;
+  }
+  .headerLogo {
+    display: block;
+    text-align: center;
+    justify-self: center;
+  }
+  .LPPA {
+    scale: 0.8;
+    width: 100%;
+    text-align: justify;
+  }
+  .LPPB {
+    scale: 0.8;
+    width: 100%;
+    text-align: justify;
+  }
+  .LPPC {
+    scale: 0.8;
+    width: 100%;
+    text-align: justify;
+  }
+  .LPLogo {
+    position: relative block;
+    justify-self: center;
+  }
+
+  .LPintroPara {
+    width: 100%;
   }
 }
 

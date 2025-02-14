@@ -8,11 +8,8 @@ function Nav() {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top bg-slate-200 ">
-        <div
-          className="justify-self-left px-2   w-50 text-top navTitleIcon "
-          id="navTitle"
-        >
+      <nav className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top bg-slate-300 ">
+        <div className="justify-self-left px-2   w-50 text-top navTitleIcon ">
           The Auto Trainer
         </div>
         <div className="   w-50  px-3" id="full-nav">
@@ -51,7 +48,7 @@ function Nav() {
           </ul>
         </div>
         <div
-          className="transition-all duration-500 text-right flex-wrap p-2"
+          className="transition-all duration-500 text-right flex-wrap p-2 shrink-nav"
           id="shrink-nav"
         >
           <button

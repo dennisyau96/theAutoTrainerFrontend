@@ -5,8 +5,6 @@ const LandingPage = () => {
   return (
     <div className="">
       <sction id="landingPage">
-        <img src="../public/auto-logo.png" className="LPLogo"></img>
-
         <h1 className=" landingPageTitle relative">
           The Auto Trainer - Paul Iacobazzi
         </h1>
@@ -25,8 +23,10 @@ const LandingPage = () => {
             a Six-Figure Income!
           </span>
         </p>
-        <button className="relative rounded-5 bg-purple-200 px-3 LPPBtn">
-          <NavLink to="/programs">Program</NavLink>
+        <button className="relative rounded-5 bg-purple-200 px-4 py-1 LPPBtn  ">
+          <NavLink to="/programs" className="text-white">
+            Program
+          </NavLink>
         </button>
       </sction>
     </div>

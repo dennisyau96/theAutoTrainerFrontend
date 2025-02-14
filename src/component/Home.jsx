@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LandingPage from "./LandingPage";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="text-center min-vh-100">
@@ -9,11 +12,15 @@ const Home = () => {
         <section id="homeSection1" className="pt-10">
           <h2 className="subtitleA"></h2>
         </section>
-        <section id="homeSection2 " className="pt-10">
+        <section id="homeSection2 " className="pt-10 overflow">
           <h2 className="subtitleB">Sucessful Story</h2>
           <div id="story1" className="sucessfulStory  ">
             <div className="storyPicA">
-              <img src="../../Essiano Majidi.JPEG" alt="" className="h-150" />
+              <img
+                src="../../Essiano Majidi.JPEG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Essiano Majidi</span>
                 <span className="storyDealership block">Capilano VW</span>
@@ -28,7 +35,11 @@ const Home = () => {
           </div>
           <div id="story2" className="sucessfulStory ">
             <div className="storyPicB">
-              <img src="../../Alex Nguyen.JPG" alt="" className="h-150" />
+              <img
+                src="../../Alex Nguyen.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Alex Nguyen</span>
                 <span className="storyDealership block">Carter GM</span>
@@ -47,7 +58,7 @@ const Home = () => {
               <img
                 src="https://img.sm360.ca/ir/h250/images/employee/dilawri-group-of-companies/braeden-bhullar-500x500-v21681244853621.png"
                 alt=""
-                className="h-150"
+                className="max-h-150 min-h-auto"
               />
               <div>
                 <span className="storyName block">Braeden Bhuller</span>
@@ -64,7 +75,11 @@ const Home = () => {
           </div>
           <div id="story4" className="sucessfulStory block">
             <div className="storyPicB">
-              <img src="../../NavGarg.JPG" alt="" className="h-150" />
+              <img
+                src="../../NavGarg.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Nav Garg</span>
                 <span className="storyDealership block">Capilano Audi</span>
@@ -79,7 +94,11 @@ const Home = () => {
           </div>
           <div id="story5" className="sucessfulStory block">
             <div className="storyPicA">
-              <img src="../../SarahGreen.jpeg" alt="" className="h-110" />
+              <img
+                src="../../SarahGreen.jpeg"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Sarah Green</span>
                 <span className="storyDealership block">Capilano VW</span>
@@ -93,7 +112,11 @@ const Home = () => {
           </div>
           <div id="story6" className="sucessfulStory block">
             <div className="storyPicB">
-              <img src="../../PeggyWu.jpeg" alt="" className="h-150" />
+              <img
+                src="../../PeggyWu.jpeg"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Peggy Wu</span>
                 <span className="storyDealership block">Regency Toyota</span>
@@ -109,7 +132,11 @@ const Home = () => {
           </div>
           <div id="story7" className="sucessfulStory block">
             <div className="storyPicA">
-              <img src="../../Levi.jpg" alt="" className="h-150" />
+              <img
+                src="../../Levi.jpg"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Levi Generale</span>
                 <span className="storyDealership block">Regency Toyota</span>
@@ -126,7 +153,11 @@ const Home = () => {
           </div>
           <div id="story8" className="sucessfulStory block">
             <div className="storyPicB">
-              <img src="../../CurtisKmyta.JPG" alt="" className="h-150" />
+              <img
+                src="../../CurtisKmyta.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Curtis Kmyta</span>
                 <span className="storyDealership block">Valley Toyota</span>
@@ -143,7 +174,11 @@ const Home = () => {
           </div>
           <div id="story9" className="sucessfulStory block">
             <div className="storyPicA">
-              <img src="../../PeterVetra.JPG" alt="" className="h-150" />
+              <img
+                src="../../PeterVetra.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Peter Vetra</span>
                 <span className="storyDealership block">
@@ -161,7 +196,11 @@ const Home = () => {
           </div>
           <div id="story10" className="sucessfulStory block">
             <div className="storyPicB">
-              <img src="../../AaronLi.JPG" alt="" className="h-150" />
+              <img
+                src="../../AaronLi.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Aaron Li</span>
                 <span className="storyDealership block">Capilano Audi</span>
@@ -177,9 +216,17 @@ const Home = () => {
           </div>
           <div id="story11" className="sucessfulStory block">
             <div className="storyPicA">
-              <span className="flex">
-                <img src="../../FrankFang.JPG" alt="" className="h-110"></img>
-                <img src="../../FrankFang2.JPG" alt="" className="h-110" />
+              <span className="flex flex-wrap justify-content-center">
+                <img
+                  src="../../FrankFang.JPG"
+                  alt=""
+                  className="max-h-70 min-h-auto"
+                ></img>
+                <img
+                  src="../../FrankFang2.JPG"
+                  alt=""
+                  className="max-h-70 min-h-auto mt-2"
+                />
               </span>
 
               <div>
@@ -200,7 +247,11 @@ const Home = () => {
           </div>
           <div id="story12" className="sucessfulStory block">
             <div className="storyPicA">
-              <img src="../../DestineeBotchar.JPG" alt="" className="h-150" />
+              <img
+                src="../../DestineeBotchar.JPG"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Destinee Botchar</span>
                 <span className="storyDealership block">Acura of Langley</span>
@@ -215,7 +266,11 @@ const Home = () => {
           </div>
           <div id="story13" className="sucessfulStory  ">
             <div className="storyPicB">
-              <img src="../../RomanIacobazzi.jpg" alt="" className="h-150" />
+              <img
+                src="../../RomanIacobazzi.jpg"
+                alt=""
+                className="max-h-150 min-h-auto"
+              />
               <div>
                 <span className="storyName block">Roman Iacobazzi</span>
                 <span className="storyDealership block">Destination Mazda</span>

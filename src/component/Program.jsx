@@ -1,7 +1,11 @@
 import React from "react";
 import { programAdvantages } from "../assets/data";
+import { useEffect } from "react";
 import programAdvantageCard from "../lego/programAdvantageCard";
 const Program = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="text-center justify-items-center" id="programDiv">
       <h1 className="pageTitle">Program</h1>
