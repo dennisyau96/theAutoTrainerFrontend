@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div className="">
       <sction id="landingPage">
-        <h1 className=" landingPageTitle relative">
+        <h1 className=" landingPageTitle relative pb-10">
           The Auto Trainer <br />
           Paul Iacobazzi
         </h1>
@@ -37,11 +37,23 @@ const LandingPage = () => {
               .scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <div className="LPArrowBlock mt-20 hover:scale-110">
+          <div className="LPArrowBlock mt-1 hover:text-white  drop-shadow-2xl rounded-4 p-3 ">
             <span className="block text-gray-700 text-3xl    cursor-pointer transition-all ease-in-out ">
-              To See Some Successful Story
+              {/* <i className="block fa fa-arrow-down m-3 text-gray-700 text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce  "></i>
+              Scroll Down
+              <i className="block fa fa-arrow-down m-3 text-gray-700 text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce "></i> */}
+              <br />
+              To See The Successful Stories
             </span>
-            <i className="block fa fa-arrow-down m-3 text-black text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce "></i>
+            <svg
+              className="svg-icon down-arrow scale-10"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 51.92"
+            >
+              <path d="M46.262,51.92,0,5.657,5.657,0,46.262,40.6,86.867,0l5.656,5.657Z"></path>
+            </svg>
+
+            {/* <i className="block fa fa-arrow-down m-3 text-black text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce "></i> */}
           </div>
         </button>
       </sction>

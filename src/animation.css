@@ -214,16 +214,22 @@
 }
 
 .subtitleA {
-  animation-name: subtitleAAnm;
+  /* animation-name: subtitleAAnm; */
   animation-timeline: view();
-  padding-top: 10vh;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-variant: small-caps;
+  font-family: Times, serif;
+  font-weight: 500;
+  font-style: italic;
 }
 .subtitleB {
-  animation-name: subtitleBAnm;
+  /* animation-name: subtitleBAnm; */
   animation-timeline: view();
-  font-size: 3rem;
-  padding-top: 10vh;
+  font-size: 4rem;
+  font-variant: small-caps;
+  font-family: Times, serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 @keyframes subtitleAAnm {
@@ -304,7 +310,7 @@
 
 @keyframes storyPicAAnm {
   0% {
-    transform: translateX(-20vw);
+    transform: translateX(-5vw);
     opacity: 0%;
   }
   50% {
@@ -314,7 +320,7 @@
 }
 @keyframes storyPicBAnm {
   0% {
-    transform: translateX(20vw);
+    transform: translateX(5vw);
     opacity: 0%;
   }
   50% {
@@ -329,7 +335,7 @@
 }
 @keyframes storyNameAnm {
   0% {
-    scale: 1.5;
+    scale: 1.2;
     opacity: 0%;
   }
   30% {
@@ -344,7 +350,7 @@
 }
 @keyframes storyDetailAnm {
   0% {
-    transform: translateX(-20vw);
+    transform: translateX(-10vw);
     opacity: 0%;
   }
   50% {
@@ -362,7 +368,7 @@
 }
 @keyframes storyDealershipAnm {
   0% {
-    transform: translateX(20vw);
+    transform: translateX(3vw);
     opacity: 0%;
   }
   30% {
@@ -423,7 +429,7 @@
   line-height: 2rem;
   text-align: justify;
   font-family: "Trebuchet MS", sans-serif;
-  color: rgb(232, 232, 233);
+  color: rgb(255, 255, 255);
 }
 .LPPB {
   animation-name: LPPAAnm;
@@ -493,6 +499,20 @@
 .LPLogo {
   animation-name: landingPageTitleAnm;
   animation-duration: 0.7s;
+}
+
+.LPArrowBlock {
+  animation-timeline: view();
+  animation-name: LPArrowBlockAnm;
+}
+
+@keyframes LPArrowBlockAnm {
+  0% {
+    transform: translateY(0vh);
+  }
+  0% {
+    transform: translateY(30vh);
+  }
 }
 
 .headerLogo {
