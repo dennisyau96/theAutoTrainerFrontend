@@ -12,7 +12,7 @@ const Home = () => {
         <section id="homeSection1" className="pt-10">
           <h2 className="subtitleA"></h2>
         </section>
-        <section id="homeSection2 " className="pt-10 overflow">
+        <section id="homeSection2" className="pt-5 overflow px-3">
           <h2 className="subtitleB">Sucessful Story</h2>
           <div id="story1" className="sucessfulStory  ">
             <div className="storyPicA">

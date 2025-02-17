@@ -16,36 +16,39 @@ body {
   transition-delay: 300ms;
   transition: all;
 }
-Link {
-  text-decoration: none;
-  color: white;
-}
-NavLink {
-  text-decoration: none;
-  color: white;
-}
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
 
-a:link {
-  text-decoration: none;
-  color: white;
-}
-a:active {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 iframe {
   width: 100px;
 }
+
 /* class selector*/
+
+.BGcolor1 {
+  background-color: #89a8b2;
+}
+.BGcolor2 {
+  background-color: #b3c8cf;
+}
+.BGcolor3 {
+  background-color: #e5e1da;
+}
+.BGcolor4 {
+  background-color: #f1f0e8;
+}
+
+.textcolor1 {
+  color: #89a8b2;
+}
+.textcolor2 {
+  color: #b3c8cf;
+}
+.textcolor3 {
+  color: #e5e1da;
+}
+.textcolor4 {
+  color: #f1f0e8;
+}
+
 .root {
   width: 100%;
 }
@@ -59,6 +62,7 @@ iframe {
   font-weight: bolder;
   font-family: "Times New Roman", Times, serif;
 } */
+
 .nav-item {
   display: inline;
 }
@@ -84,25 +88,26 @@ iframe {
   text-align: center;
 }
 
-#HeaderDiv {
+#headerDiv {
   width: 100%;
+  background-color: #b3c8cf;
 }
 
 #landingPage {
   min-height: 100vh;
   width: 100vw;
   display: block;
-  background-image: linear-gradient(
-    to right,
-    rgb(151, 191, 255),
-    rgb(85, 127, 191)
-  );
+  background-image: linear-gradient(to top, #89a8b2, #e5e1da);
 }
 
 #shrinkHeaderIcon {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 2.5rem;
+}
+
+#navDiv {
+  background-color: #b3c8cf;
 }
 
 /* media */
@@ -122,17 +127,24 @@ iframe {
   .LPPA {
     scale: 0.8;
     width: 100%;
-    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    text-align: center;
   }
   .LPPB {
     scale: 0.8;
     width: 100%;
-    text-align: justify;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .LPPC {
     scale: 0.8;
     width: 100%;
-    text-align: justify;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .LPLogo {
     position: relative block;
@@ -141,6 +153,17 @@ iframe {
 
   .LPintroPara {
     width: 100%;
+  }
+  #carouselExampleIndicators {
+    min-width: 400px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 600px) {
+  #carouselExampleIndicators {
+    min-width: 400px;
+    max-width: 500px;
   }
 }
 
@@ -151,6 +174,21 @@ iframe {
   #full-nav {
     display: block;
   }
+  .LPPA {
+    scale: 0.9;
+    width: 100%;
+    text-align: center;
+  }
+  .LPPB {
+    scale: 0.9;
+    width: 100%;
+    text-align: center;
+  }
+  .LPPC {
+    scale: 0.9;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -159,6 +197,21 @@ iframe {
   }
   #full-nav {
     display: block;
+  }
+  .LPPA {
+    scale: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .LPPB {
+    scale: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .LPPC {
+    scale: 1;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -180,4 +233,36 @@ iframe {
 
 .storyName {
   font-size: 2rem;
+}
+
+#programDiv {
+  background-image: url("https://player.vimeo.com/video/397054458");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+/*Testimonial*/
+.testiTextBG {
+  background-color: rgb(235, 235, 211);
+}
+
+.ttname {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.ttdealership {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ttposition {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.ttdesc {
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-align: justify;
 }

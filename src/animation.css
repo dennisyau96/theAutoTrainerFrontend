@@ -6,25 +6,25 @@
   background-color: rgb(255, 255, 255);
   width: 100%;
   scale: 0 1;
-  -webkit-animation-name: scroll-watcher;
-  -webkit-animation-timeline: scroll();
-  transform-origin: center;
+  animation: scrollWatcher;
+  animation-timeline: scroll();
+
+  transform-origin: left;
 
   /* box-shadow: 5px 4px white 0.5; */
 }
 
-@keyframes scroll-watcher {
+@keyframes scrollWatcher {
   0% {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
   }
-  40% {
-    background-color: rgb(43, 85, 235);
-  }
+
   100% {
     scale: 1 1;
-    background-color: rgb(6, 243, 89);
+    background-color: #e5e1da;
   }
 }
+
 @-webkit-keyframes scroll-watcher {
   0% {
     -webkit-background-color: rgb(255, 255, 255);
@@ -39,14 +39,15 @@
 }
 
 .navTitleIcon {
-  animation: navTitleIconAnm;
+  animation-name: navTitleIconAnm;
   animation-timeline: view();
-  font-weight: bolder;
+  font-weight: 700;
 }
 @keyframes navTitleIconAnm {
   0% {
     opacity: 0%;
     transform: translateX(-2500px);
+    color: black;
   }
   10% {
     opacity: 100%;
@@ -215,12 +216,14 @@
 .subtitleA {
   animation-name: subtitleAAnm;
   animation-timeline: view();
+  padding-top: 10vh;
   font-size: 3rem;
 }
 .subtitleB {
   animation-name: subtitleBAnm;
   animation-timeline: view();
   font-size: 3rem;
+  padding-top: 10vh;
 }
 
 @keyframes subtitleAAnm {
@@ -416,12 +419,11 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0%;
-  font-size: 5vh;
-  line-height: 5vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
   text-align: justify;
-
-  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", sans-serif;
+  color: rgb(232, 232, 233);
 }
 .LPPB {
   animation-name: LPPAAnm;
@@ -431,13 +433,12 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0%;
-  font-size: 20px;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
   font-style: italic;
-  line-height: 35px;
-  color: white;
+  color: rgb(30, 63, 80);
   text-align: justify;
-
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
 }
 .LPPC {
   animation-name: LPPAAnm;
@@ -448,11 +449,11 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
-
-  font-size: 35px;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: rgb(255, 255, 255);
   line-height: 40px;
+  font-family: "Trebuchet MS", sans-serif;
 }
 @keyframes LPPAAnm {
   0% {
@@ -466,11 +467,9 @@
 
 .LPPBtn {
   font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  background-color: transparent;
+  color: rgb(223, 223, 223);
   border-width: 2px;
-  border-color: white;
+  border-color: rgb(223, 223, 223);
   animation-name: LPPBtnAnm;
   animation-duration: 4s;
 }
@@ -484,15 +483,11 @@
 }
 .LPPBtn:hover {
   font-size: 2rem;
-  color: rgb(45, 42, 242);
-  text-decoration: none;
-  border-width: 3px;
-  border-color: rgb(83, 83, 83);
-  scale: 1.1;
-}
+  color: rgb(50, 73, 107);
 
-.LPPBtn > NavLink {
   text-decoration: none;
+  border-width: 2px;
+  border-color: rgb(50, 73, 107);
 }
 
 .LPLogo {
@@ -516,23 +511,70 @@
     opacity: 100%;
   }
 }
-
-.dropDownList {
+#shrink-nav-btn {
+  background-color: #e5e1da;
   animation-name: dropDownListAnm;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
-.shrink-nav {
+/* .shrink-nav {
   animation-name: dropDownListAnm;
   animation-duration: 0.5s;
+} */
+#dropDownList {
+  animation-name: dropDownListAnm;
+  animation-duration: 1s;
 }
 @keyframes dropDownListAnm {
   0% {
     opacity: 0%;
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
   }
   100% {
     opacity: 100%;
     transform: translateY(0vh);
+  }
+}
+
+.testiTextBG {
+  background-color: rgb(235, 235, 211);
+}
+
+.ttname {
+  animation-name: ttAnm;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0ms;
+  opacity: 0;
+}
+.ttdealership {
+  animation-name: ttAnm;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 300ms;
+  opacity: 0;
+}
+
+.ttposition {
+  animation-name: ttAnm;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 5f00ms;
+  opacity: 0;
+}
+.ttdesc {
+  animation-name: ttAnm;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1000ms;
+  opacity: 0;
+}
+
+@keyframes ttAnm {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }

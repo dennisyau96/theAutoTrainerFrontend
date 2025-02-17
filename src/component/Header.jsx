@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className=" px-4 py-2 bg-slate-300" id="headerDiv">
+      <header className=" px-4 py-2 " id="headerDiv">
         {/* <span id="shrinkHeaderIcon">The Auto Trainer</span> */}
         <Link className="navbar-brand block " to="/">
           <img src="../auto-logo.png" className="headerLogo"></img>

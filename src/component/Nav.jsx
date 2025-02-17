@@ -8,37 +8,40 @@ function Nav() {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top bg-slate-300 ">
-        <div className="justify-self-left px-2   w-50 text-top navTitleIcon ">
+      <nav
+        className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top  "
+        id="navDiv"
+      >
+        <div className="justify-self-left px-2   w-50 text-top navTitleIcon textcolor4 ">
           The Auto Trainer
         </div>
         <div className="   w-50  px-3" id="full-nav">
           <ul className="navbar-nav flex-row gap-3 justify-content-end px-2">
             <li className="nav-item ">
-              <NavLink
-                className="nav-link  active:text-blue-500 active:text-bold navBtn"
+              <Link
+                className="nav-link   active:text-bold navBtn"
                 aria-current="page"
                 to="/"
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
 
             <li className="nav-item  rounded-4  ">
-              <NavLink className="nav-link navBtn" to="/programs">
+              <Link className="nav-link navBtn" to="/programs">
                 Programs
-              </NavLink>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link navBtn" to="/testimonials">
+              <Link className="nav-link navBtn" to="/testimonials">
                 Testmonials
-              </NavLink>
+              </Link>
             </li>
 
             <li className="nav-item">
               <Link
-                className="nav-link  navBtn"
+                className="nav-link  navBtn textcolor4"
                 aria-disabled="true"
                 to="about"
               >
@@ -56,7 +59,7 @@ function Nav() {
             id="shrink-nav-btn"
             onClick={() => toggle()}
           >
-            <span className=" text-2xl font-bold p-0">=</span>
+            <span className=" text-2xl font-bold p-0 ">=</span>
           </button>
           {collapsed ? null : (
             <div
@@ -66,50 +69,50 @@ function Nav() {
             >
               <ul className="flex-wrap">
                 <li>
-                  <NavLink
-                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item navBtn"
+                  <Link
+                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item  navBtn nav-link"
                     to="/"
                     onClick={() => toggle()}
                   >
                     Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
+                  <Link
                     className="     shrinkNavBtn dropdown-item navBtn"
                     to="/reviews"
                     onClick={() => toggle()}
                   >
                     Google Reviews
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
+                  <Link
                     className="  shrinkNavBtn dropdown-item navBtn"
                     to="/testimonials"
                     onClick={() => toggle()}
                   >
                     Testimonials
-                  </NavLink>
+                  </Link>
                 </li>
 
                 <li className="">
-                  <NavLink
+                  <Link
                     className="  shrinkNavBtn dropdown-item "
                     to="/programs"
                     onClick={() => toggle()}
                   >
                     Programs
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
+                  <Link
                     className="     shrinkNavBtn dropdown-item"
                     to="/about"
                     onClick={() => toggle()}
                   >
                     About
-                  </NavLink>
+                  </Link>
                 </li>
               </ul>
             </div>

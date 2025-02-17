@@ -11,7 +11,10 @@ const Footer = () => {
         id="footerDiv"
       >
         <div className="h-1/6 ">
-          <Link to="/" className=" hover:font-bold text-black footerTitle ">
+          <Link
+            to="/"
+            className=" hover:font-bold text-black footerTitle nav-link justify-self-center "
+          >
             The Auto Trainer
           </Link>
           <div className="flex flex-wrap text-center justify-center">
@@ -45,7 +48,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="text-right h-fit">
-            <a href="#" className="text-xs ">
+            <a href="#" className="text-xs nav-link hover:text-red-200">
               Back to top
             </a>
           </div>
