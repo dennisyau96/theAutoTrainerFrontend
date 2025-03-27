@@ -176,13 +176,19 @@
 
   max-width: 1000px;
   justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+
   border: none;
   border-radius: 25px;
   box-shadow: 15px 15px 15px rgb(242, 241, 241);
 }
 @keyframes sucessfulStoryAnm {
   0% {
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
+    transform: translateY(0px);
+
     opacity: 0%;
     scale: 0.5;
   }
@@ -208,6 +214,10 @@
   animation-duration: 2s;
 
   justify-items: center;
+  justify-self: center;
+  text-align: center;
+  justify-content: center;
+
   display: block;
   position: static;
   height: auto;
@@ -216,6 +226,9 @@
 .storyPicB {
   animation-name: storyPicBAnm;
   justify-items: center;
+  justify-self: center;
+  text-align: center;
+  justify-content: center;
   /* animation-timeline: view(); */
   animation-duration: 2s;
 
@@ -227,7 +240,9 @@
 
 @keyframes storyPicAAnm {
   0% {
-    transform: translateX(-5vw);
+    /* transform: translateX(-5vw); */
+    transform: translateX(0vw);
+
     opacity: 0%;
   }
   100% {
@@ -237,7 +252,10 @@
 }
 @keyframes storyPicBAnm {
   0% {
-    transform: translateX(5vw);
+    /* transform: translateX(5vw);
+     */
+    transform: translateX(0vw);
+
     opacity: 0%;
   }
   100% {
