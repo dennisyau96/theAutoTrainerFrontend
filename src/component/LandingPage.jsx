@@ -5,13 +5,17 @@ const LandingPage = () => {
   return (
     <div id="landingPageDiv">
       {" "}
-      <i
+      {/* <i
         className="absolute text-right  fa fa-solid fa-image m-2 text-slate-400 cursor-pointer hover:scale-150 scale-120 text-lg"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
-      ></i>
+      ></i> */}
       <sction id="landingPage">
-        <h1 className=" landingPageTitle relative pb-10">
+        <h1
+          className=" landingPageTitle relative pb-10 block cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
           The Auto Trainer <br />
           Paul Iacobazzi
         </h1>
@@ -56,7 +60,11 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="LPintroPara relative grid-rows-1 gap-0 grid align-content-center ">
+        <div
+          className="LPintroPara relative grid-rows-1 gap-0 grid align-content-center cursor-pointer "
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
           <span className="LPPA justify-center text-justify align-middle text-wrap">
             Have you hit a career wall and making less money than you deserve?
           </span>

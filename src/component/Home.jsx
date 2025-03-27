@@ -12,7 +12,10 @@ const Home = () => {
         <section id="homeSection1" className="pt-10">
           <h2 className="subtitleA"></h2>
         </section>
-        <section id="homeSection2" className="pt-5 overflow px-3">
+        <section
+          id="homeSection2"
+          className="pt-5 overflow px-3 justify-items-center text-center justify-content-center justify-self-center"
+        >
           <h2 className="subtitleB">Sucessful Story</h2>
           <div id="story1" className="sucessfulStory  ">
             <div className="storyPicA">
@@ -194,7 +197,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div id="story10" className="sucessfulStory block">
+          <div id="story10" className="sucessfulStory block ">
             <div className="storyPicB">
               <img
                 src="../../AaronLi.JPG"
@@ -291,7 +294,7 @@ const Home = () => {
           </div>
         </section>
         <section id="homeSection3" className="pt-10">
-          <h2 className="subtitleA">Positive Reviews</h2>
+          {/* <h2 className="subtitleA">Positive Reviews</h2> */}
         </section>
         <section id="homeSection4"></section>
       </div>

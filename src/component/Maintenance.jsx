@@ -4,6 +4,9 @@ import { useEffect } from "react";
 
 const Maintenance = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   //   useEffect(() => {
   //     setTimeout(() => {
   //       navigate(-1), 10000;
