@@ -17,17 +17,13 @@ body {
   transition: all;
 }
 
-iframe {
-  width: 100px;
-}
-
 /* class selector*/
 
 .BGcolor1 {
-  background-color: #89a8b2;
+  background-color: #c2dde6;
 }
 .BGcolor2 {
-  background-color: #b3c8cf;
+  background-color: #d0e4eb;
 }
 .BGcolor3 {
   background-color: #e5e1da;
@@ -90,14 +86,26 @@ iframe {
 
 #headerDiv {
   width: 100%;
-  background-color: #b3c8cf;
+  background-color: white;
 }
 
 #landingPage {
   min-height: 100vh;
   width: 100vw;
   display: block;
-  background-image: linear-gradient(to top, #89a8b2, #e5e1da);
+  /* background-image: linear-gradient(to top, #89a8b2, #e5e1da, 0); */
+  background-color: rgba(160, 159, 159, 0.768);
+}
+
+#landingPageDiv {
+  min-height: 100vh;
+  width: auto;
+  background-image: url("../public/PaulAndJim.jpeg");
+  /* background-color: rgba(199, 234, 230, 0.5); */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
 }
 
 #shrinkHeaderIcon {
@@ -107,12 +115,80 @@ iframe {
 }
 
 #navDiv {
-  background-color: #b3c8cf;
+  background-color: white;
+}
+
+#footerDiv {
+  background-color: rgb(231, 231, 231);
 }
 
 /* media */
 
+@media (min-width: 0px) {
+  #ytIntro {
+    width: 300px;
+    height: auto;
+  }
+  #mainContent {
+    padding: 0px;
+  }
+  #shrink-nav {
+    display: block;
+  }
+  #full-nav {
+    display: none;
+  }
+  .headerLogo {
+    display: block;
+    text-align: center;
+    justify-self: center;
+  }
+  .LPPA {
+    scale: 1;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    text-align: center;
+  }
+  .LPPB {
+    scale: 1;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .LPPC {
+    scale: 1;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .LPLogo {
+    position: relative block;
+    justify-self: center;
+  }
+
+  .LPintroPara {
+    width: 80%;
+    /* background-color: rgba(255, 255, 255, 0.501); */
+  }
+  #carouselExampleIndicators {
+    min-width: 400px;
+    max-width: 500px;
+  }
+  #programDetail {
+    display: block;
+  }
+  #ytIntro {
+    width: 30vw;
+  }
+}
 @media (min-width: 480px) {
+  #mainContent {
+    padding: 0px;
+  }
   #shrink-nav {
     display: block;
   }
@@ -161,9 +237,16 @@ iframe {
 }
 
 @media (min-width: 600px) {
+  #ytIntro {
+    width: 300px;
+    height: auto;
+  }
   #carouselExampleIndicators {
     min-width: 400px;
     max-width: 500px;
+  }
+  #mainContent {
+    padding: 0px;
   }
 }
 
@@ -175,17 +258,17 @@ iframe {
     display: block;
   }
   .LPPA {
-    scale: 0.9;
+    scale: 1;
     width: 100%;
     text-align: center;
   }
   .LPPB {
-    scale: 0.9;
+    scale: 1;
     width: 100%;
     text-align: center;
   }
   .LPPC {
-    scale: 0.9;
+    scale: 1;
     width: 100%;
     text-align: center;
   }
@@ -243,6 +326,11 @@ iframe {
   background-position: center;
   background-repeat: none;
   background-size: cover;
+}
+
+#sampleVideoIframe {
+  max-width: 600px;
+  min-width: 300px;
 }
 
 /*Testimonial*/

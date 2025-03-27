@@ -11,7 +11,7 @@ const Testimonials = () => {
         id="carouselExampleIndicators"
         className="carousel slide w-50 h-auto  min-h-50 jusify-contents-center  jusify-self-center border-black "
       >
-        <div className="carousel-indicators ">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -62,7 +62,7 @@ const Testimonials = () => {
           ></button>
         </div>
         <div
-          className="carousel-inner BGcolor2 p-7 rounded-3 my-3 "
+          className="carousel-inner BGcolor2 p-7 rounded-3  "
           id="carousel-inner"
         >
           <div className="carousel-item active">
@@ -71,10 +71,10 @@ const Testimonials = () => {
               className="d-block w-100"
               alt="Derek Lau(Capilano Volkswagen)"
             />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor3 py-1 font-bold align-content-center">
               <span className="ttdealership">Capilano Volkswagen</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5 ">
               <span className="ttdesc">
                 Whenever I hire new sales people I immediately call Paul
                 Iacobazzi to train them at our dealership. Paul always gives us

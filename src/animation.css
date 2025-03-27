@@ -1,221 +1,10 @@
-.scroll-watcher {
-  height: 0.6vh;
-  position: fixed;
-  top: 0;
-  z-index: 100000;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  scale: 0 1;
-  animation: scrollWatcher;
-  animation-timeline: scroll();
-
-  transform-origin: left;
-
-  /* box-shadow: 5px 4px white 0.5; */
-}
-
-@keyframes scrollWatcher {
-  0% {
-    background-color: white;
-  }
-
-  100% {
-    scale: 1 1;
-    background-color: #e5e1da;
-  }
-}
-
-@-webkit-keyframes scroll-watcher {
-  0% {
-    -webkit-background-color: rgb(255, 255, 255);
-  }
-  40% {
-    -webkit-background-color: rgb(43, 85, 235);
-  }
-  100% {
-    -webkit-scale: 1 1;
-    -webkit-background-color: rgb(6, 243, 89);
-  }
-}
-
-.navTitleIcon {
-  animation-name: navTitleIconAnm;
-  animation-timeline: view();
-  font-weight: 700;
-}
-@keyframes navTitleIconAnm {
-  0% {
-    opacity: 0%;
-    transform: translateX(-2500px);
-    color: black;
-  }
-  10% {
-    opacity: 100%;
-
-    transform: translateX(-0vw);
-  }
-  30% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-    color: black;
-  }
-}
-
-.headerTitle {
-  /* animation-name: headerTitleFade; */
-  animation-timeline: scroll();
-}
-
-@keyframes headerTitleFade {
-  0% {
-    scale: 1 1;
-  }
-  100% {
-    scale: 0.5 0.5;
-    transition: ease;
-    /* transform: translateX(-100px); */
-    transform: translateY(-100px);
-    opacity: 30%;
-  }
-}
-
-.PA {
-  color: white;
-  min-width: 200px;
-  animation-name: PASlide;
-  animation-timeline: scroll();
-  color: white;
-}
-
-.PA1 {
-  background-color: rgb(18, 33, 169);
-}
-
-.PA2 {
-  background-color: rgb(26, 101, 221);
-}
-
-.PA3 {
-  background-color: rgb(30, 142, 246);
-}
-
-@keyframes PASlide {
-  0% {
-    transform: translateX(50vw);
-    opacity: 0%;
-  }
-  20% {
-    transform: translateX(50vw);
-    opacity: 100%;
-  }
-  /* 10% {
-    transform: translateX(5vw);
-    opacity: 100%;
-  }
-  50% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  }
-  95% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  } */
-
-  90% {
-    opacity: 100%;
-    transform: translateX(-30vw);
-  }
-  100% {
-    opacity: 0%;
-    transform: translateX(-30vw);
-  }
-}
-
-.teachItem {
-  width: 30vw;
-  height: auto;
-  min-width: 300px;
-  margin-bottom: 10px;
-  border-radius: 10px 25px;
-  border-width: 1px;
-  text-align: justify;
-  background-color: antiquewhite;
-  animation-timing-function: linear;
-  animation-timeline: view();
-  animation: teachItemsAnm;
-  padding: 20px;
-  line-height: 2vwpx;
-}
-
-@keyframes teachItemsAnm {
-  0% {
-    opacity: 10%;
-    transform: translateY(-30vw);
-  }
-  30% {
-    opacity: 100%;
-    transform: translateY(0vw);
-  }
-  90% {
-    opacity: 100%;
-    transform: translateY(0vw);
-  }
-
-  100% {
-    opacity: 10%;
-    transform: translateY(30vw);
-  }
-}
-
-/* .navTitle {
-  animation-timeline: view();
-  animation-name: navTitleAnm;
-}
-@keyframes navTitleAnm {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  90% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-    color: black;
-  }
-} */
-
-#introVideoDiv {
-  width: 100vw;
-  background-color: bisque;
-}
-@keyframes introVideoDivAnm {
-}
-
-.pageTitle {
-  animation: pageTitleAnm;
-  animation-duration: 1.5s;
-  top: 20%;
-}
-
-@keyframes pageTitleAnm {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0%;
-  }
-  100% {
-    transform: translateY(0vh);
-    opacity: 100%;
-  }
-}
+/*general*/
 
 .subtitleA {
   /* animation-name: subtitleAAnm; */
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   font-size: 4rem;
   font-variant: small-caps;
   font-family: Times, serif;
@@ -224,7 +13,9 @@
 }
 .subtitleB {
   /* animation-name: subtitleBAnm; */
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   font-size: 4rem;
   font-variant: small-caps;
   font-family: Times, serif;
@@ -254,11 +45,135 @@
   }
 }
 
+.scroll-watcher {
+  height: 0.6vh;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  scale: 0 1;
+  animation: scrollWatcher;
+  animation-timeline: scroll();
+
+  transform-origin: left;
+
+  /* box-shadow: 5px 4px white 0.5; */
+}
+
+@keyframes scrollWatcher {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    scale: 1 1;
+    background-color: #e5e1da;
+  }
+}
+
+.navTitleIcon {
+  animation-name: navTitleIconAnm;
+  font-weight: 600;
+  animation-duration: 1.5s;
+}
+@keyframes navTitleIconAnm {
+  0% {
+    opacity: 0%;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(-0px);
+  }
+}
+
+.nav-link {
+  animation-duration: 1s;
+  animation-name: nav-linkAnm;
+}
+@keyframes nav-linkAnm {
+  0% {
+    opacity: 0%;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+/*------------------------------------program------------------------------------*/
+.PA {
+  color: white;
+  min-width: 200px;
+  animation-name: PASlide;
+  animation-timeline: scroll();
+  color: black;
+}
+
+/* .PA1 {
+  background-color: rgb(18, 33, 169);
+}
+
+.PA2 {
+  background-color: rgb(26, 101, 221);
+}
+
+.PA3 {
+  background-color: rgb(30, 142, 246);
+} */
+
+.teachItem {
+  width: 30vw;
+  height: auto;
+  min-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px 25px;
+  border-width: 1px;
+  text-align: justify;
+  background-color: antiquewhite;
+  animation-timing-function: linear;
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+  animation: teachItemsAnm;
+  padding: 20px;
+  line-height: 2vwpx;
+}
+
+#introVideoDiv {
+  width: 100vw;
+  background-color: bisque;
+}
+@keyframes introVideoDivAnm {
+}
+
+.pageTitle {
+  animation: pageTitleAnm;
+  animation-duration: 1.5s;
+  top: 20%;
+}
+
+@keyframes pageTitleAnm {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0vh);
+    opacity: 100%;
+  }
+}
+
+/*----------------------------------------story page--------------------------------------- */
+
 .sucessfulStory {
   padding: 4vw;
   margin-top: 20px;
-  animation-name: sucessfulStoryAnm;
-  animation-timeline: view();
+  /* animation-name: sucessfulStoryAnm; */
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   max-width: 1000px;
   justify-self: center;
   border: none;
@@ -269,29 +184,29 @@
   0% {
     transform: translateY(100px);
     opacity: 0%;
-    scale: 0.8;
-    background-color: rgba(100, 198, 255, 0.073);
+    scale: 0.5;
   }
-  10% {
+  /* 10% {
     opacity: 100%;
     scale: 1;
   }
   80% {
     opacity: 90%;
     scale: 1;
-  }
+  } */
   100% {
-    transform: translateY(-10px);
+    transform: translateY(0px);
     opacity: 0%;
-    scale: 0.7;
+    scale: 1;
     background-image: radial-gradient(gray white);
-    background-color: rgba(139, 246, 150, 0.11);
   }
 }
 
 .storyPicA {
   animation-name: storyPicAAnm;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   justify-items: center;
   display: block;
   position: static;
@@ -301,7 +216,9 @@
 .storyPicB {
   animation-name: storyPicBAnm;
   justify-items: center;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   display: block;
   position: static;
   height: auto;
@@ -313,7 +230,7 @@
     transform: translateX(-5vw);
     opacity: 0%;
   }
-  50% {
+  100% {
     transform: translateX(0vw);
     opacity: 100%;
   }
@@ -323,14 +240,16 @@
     transform: translateX(5vw);
     opacity: 0%;
   }
-  50% {
+  100% {
     transform: translateX(0vw);
     opacity: 100%;
   }
 }
 .storyName {
   animation-name: storyNameAnm;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   font-size: 3rem;
 }
 @keyframes storyNameAnm {
@@ -338,14 +257,16 @@
     scale: 1.2;
     opacity: 0%;
   }
-  30% {
+  100% {
     scale: 1;
     opacity: 100%;
   }
 }
 .storyDetail {
   animation-name: storyDetailAnm;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   text-align: justify;
 }
 @keyframes storyDetailAnm {
@@ -353,7 +274,7 @@
     transform: translateX(-10vw);
     opacity: 0%;
   }
-  50% {
+  100% {
     transform: translateX(0vw);
     opacity: 100%;
   }
@@ -361,7 +282,9 @@
 
 .storyDealership {
   animation-name: storyDealershipAnm;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   font-weight: bolder;
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -371,7 +294,7 @@
     transform: translateX(3vw);
     opacity: 0%;
   }
-  30% {
+  100% {
     transform: translateX(0vw);
     opacity: 100%;
   }
@@ -455,7 +378,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: rgb(255, 255, 255);
   line-height: 40px;
@@ -473,9 +396,9 @@
 
 .LPPBtn {
   font-size: 2rem;
-  color: rgb(223, 223, 223);
-  border-width: 2px;
-  border-color: rgb(223, 223, 223);
+  color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
   animation-name: LPPBtnAnm;
   animation-duration: 4s;
 }
@@ -490,9 +413,9 @@
 .LPPBtn:hover {
   font-size: 2rem;
   color: rgb(50, 73, 107);
-
+  font-weight: 700;
   text-decoration: none;
-  border-width: 2px;
+  border-width: 4px;
   border-color: rgb(50, 73, 107);
 }
 
@@ -502,16 +425,18 @@
 }
 
 .LPArrowBlock {
-  animation-timeline: view();
+  /* animation-timeline: view(); */
+  animation-duration: 2s;
+
   animation-name: LPArrowBlockAnm;
 }
 
 @keyframes LPArrowBlockAnm {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-10vh);
   }
-  0% {
-    transform: translateY(30vh);
+  100% {
+    transform: translateY(0vh);
   }
 }
 
@@ -556,8 +481,10 @@
   }
 }
 
+/*-----------------------testimonial-------------------------*/
+
 .testiTextBG {
-  background-color: rgb(235, 235, 211);
+  /* background-color: rgb(235, 235, 211); */
 }
 
 .ttname {
@@ -572,6 +499,7 @@
   animation-fill-mode: forwards;
   animation-duration: 1s;
   animation-delay: 300ms;
+  background-color: (235, 235, 211);
   opacity: 0;
 }
 

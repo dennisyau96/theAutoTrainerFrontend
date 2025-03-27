@@ -12,7 +12,7 @@ function Nav() {
         className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top  "
         id="navDiv"
       >
-        <div className="justify-self-left px-2   w-50 text-top navTitleIcon textcolor4 ">
+        <div className="justify-self-left px-2   w-50 text-top navTitleIcon  ">
           The Auto Trainer
         </div>
         <div className="   w-50  px-3" id="full-nav">

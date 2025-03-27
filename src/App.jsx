@@ -9,6 +9,7 @@ import Reviews from "./component/Reviews";
 import Testimonials from "./component/Testimonials";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
+import Maintenance from "./component/Maintenance";
 import "./App.css";
 import "./animation.css";
 import Nav from "./component/Nav";
@@ -29,7 +30,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/reviews" element={<Reviews />} />
-              <Route path="/programs" element={<Program />} />
+              <Route path="/programs" element={<Maintenance />} />
             </Route>
           </Routes>
         </div>

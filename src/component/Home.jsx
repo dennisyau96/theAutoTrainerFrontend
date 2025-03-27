@@ -275,10 +275,16 @@ const Home = () => {
                 <span className="storyName block">Roman Iacobazzi</span>
                 <span className="storyDealership block">Destination Mazda</span>
                 <span className="storyDetail ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  at hic officia sint possimus expedita fugiat sunt optio nulla
-                  quod, vel explicabo nesciunt repellendus saepe assumenda.
-                  Illum facere inventore quaerat?
+                  Paul Iacobazzi's son, Roman Iacobazzi began his career in car
+                  sales in 2015. After 3 months he won the distinguished Top Gun
+                  award for most car sales sold in May. Two months later in July
+                  he broke a record by selling 22 cars in one month. After 10
+                  years of being in sales he was promoted to being an official
+                  sales manager for the Destination group in 2022! His success
+                  is all about Customer Service and listening to the customers
+                  needs and wants. He has also won a prestigious award in
+                  customer service for being ranked number two in all of Canada
+                  with a 96% customer satisfaction rate for Mazda .
                 </span>
               </div>
             </div>
