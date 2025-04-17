@@ -11,7 +11,7 @@ const Testimonials = () => {
         id="carouselExampleIndicators"
         className="carousel slide w-50 h-auto  min-h-50 jusify-contents-center  jusify-self-center border-black "
       >
-        <div className="carousel-indicators">
+        <div className="carousel-indicators my-3">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -71,10 +71,10 @@ const Testimonials = () => {
               className="d-block w-100"
               alt="Derek Lau(Capilano Volkswagen)"
             />
-            <div className="text-center BGcolor3 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor3 py-1  align-content-center">
               <span className="ttdealership">Capilano Volkswagen</span>
             </div>
-            <div className=" BGcolor3 p-5 ">
+            <div className=" BGcolor3 p-5">
               <span className="ttdesc">
                 Whenever I hire new sales people I immediately call Paul
                 Iacobazzi to train them at our dealership. Paul always gives us
@@ -90,14 +90,14 @@ const Testimonials = () => {
               className="d-block w-100"
               alt="David Han(Destination Mazda)"
             />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">David Han</span>
               <br></br>
               <span className="ttdealership">Destination Mazda</span>
               <br></br>
               <span className="ttposition">General Sales Manager</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5">
               <span className="ttdesc">
                 Paul utilized our office for several years as a trainer and
                 coach at our dealership at the Mazda location. He is turned out
@@ -114,14 +114,14 @@ const Testimonials = () => {
               className="d-block w-100"
               alt="...1"
             />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Jeff Polo</span>
               <br />
               <span className="ttdealership">Ace Motors</span>
               <br></br>
               <span className="ttposition">Owner</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5">
               <span className="ttdesc">
                 I utilized Paul’s services when I was managing the Destination
                 Group. Several of his candidates became top performers in our
@@ -133,14 +133,14 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img src="../../Morris.jpeg" className="d-block w-100" alt="...1" />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Morris Lubinich</span>
               <br />
               <span className="ttdealership">Bannister Honda</span>
               <br></br>
               <span className="ttposition">Sales Manager</span>
             </div>
-            <div className="  BGcolor3 p-3">
+            <div className="  BGcolor3 p-5">
               <span className="ttdesc">
                 Paul Iacobazzi actually hired me way back in 1993 as a sales
                 consultant. Through the years Paul and I have become close
@@ -153,14 +153,14 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img src="../../Peter.png" className="d-block w-100" alt="...1" />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Peter Vethanayagam</span>
               <br />
               <span className="ttdealership">White Rock Hyundai</span>
               <br></br>
               <span className="ttpositiion">Sales Manager</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5">
               <span className="">
                 I took Paul’s program 11 years ago when I arrived from Sri
                 Lanka. Not only did Paul train me but he arranged an interview
@@ -174,14 +174,14 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img src="../../Cedric.png" className="d-block w-100" alt="...1" />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Cedric Gagne</span>
               <br />
               <span className="ttdealership">White Rock Hyundai</span>
               <br></br>
               <span className="ttposition">General Manager</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5 ">
               <span className="ttdesc">
                 I hired Peter Vethanayagam from The Auto Trainer program back in
                 2014. Not only has Peter been our top producer every year but he
@@ -196,14 +196,14 @@ const Testimonials = () => {
               className="d-block w-100"
               alt="...1"
             />
-            <div className="text-center BGcolor4 py-1 font-bold align-content-center">
+            <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Ian Quinn</span>
               <br />
               <span className="ttdealership">Destination Honda</span>
               <br></br>
-              <span className="ttposition">General Manager</span>
+              <span className="ttposition">Former General Manager</span>
             </div>
-            <div className=" BGcolor3 p-3 ">
+            <div className=" BGcolor3 p-5 ">
               <span className="ttdesc">
                 I worked side by side with Paul Iacobazzi for 5 years as a
                 Manager with Honda. Recently I have hired several of his
@@ -214,7 +214,7 @@ const Testimonials = () => {
           </div>
         </div>
         <button
-          className="carousel-control-prev text-black"
+          className="carousel-control-prev text-black m-3"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"

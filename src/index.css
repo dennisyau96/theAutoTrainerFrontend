@@ -121,6 +121,48 @@ body {
 #footerDiv {
   background-color: rgb(231, 231, 231);
 }
+.aboutGrid {
+  margin: 1.5vw;
+  width: 25vw;
+  min-width: 300px;
+  background-color: rgba(198, 187, 225, 0.268);
+  padding: 1.5vw;
+  border-radius: 5px 5px;
+  justify-self: center;
+}
+
+.aboutGrid:hover {
+  margin: 1.5vw;
+  scale: 1.2;
+  /* width: 25vw;
+  min-width: 300px;
+  background-color: rgba(198, 187, 225, 0.268);
+  padding: 3vw;
+  border-radius: 5px 5px;
+  justify-self: center; */
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.aboutGridHeading {
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 3vh;
+}
+.aboutGridContent {
+  font-weight: normal;
+  display: block;
+  text-align: center;
+}
+
+.Ptip {
+  background-color: #b3c8cf;
+  padding: 50px;
+  text-align: justify;
+}
 
 /* media */
 
@@ -357,4 +399,40 @@ body {
   font-weight: 500;
 
   text-align: justify;
+}
+
+/*Carousel*/
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
 }

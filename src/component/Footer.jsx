@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="  footerDiv botton-0 inset-x-0 text-center justify-center right-0 left-0 h-10/12  m-0  footer w-full   px-3 pt-3 block"
+        className="  footerDiv botton-0 inset-x-0 text-center justify-center right-0 left-0 h-10/12  m-0  footer w-full   px-5 pt-5 pb-8 block"
         id="footerDiv"
       >
         <div className="h-1/6 ">
