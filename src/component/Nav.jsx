@@ -55,11 +55,11 @@ function Nav() {
           id="shrink-nav"
         >
           <button
-            className=" navbar-toggler text-gray-200 py-1 px-1 pointer-cursor transition-all duration-1000 active:border-0"
-            id="shrink-nav-btn"
+            className=" py-1 px-1 pointer-cursor transition-all duration-1000 active:border-0 hover:underline"
+            // id="shrink-nav-btn"
             onClick={() => toggle()}
           >
-            <span className=" text-2xl font-bold p-0 ">=</span>
+            <span className=" text-lg  ">Menu</span>
           </button>
           {collapsed ? null : (
             <div

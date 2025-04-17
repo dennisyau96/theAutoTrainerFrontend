@@ -46,7 +46,7 @@
 }
 
 .scroll-watcher {
-  height: 0.6vh;
+  height: 0.4vh;
   position: fixed;
   top: 0;
   z-index: 100000;
@@ -68,7 +68,7 @@
 
   100% {
     scale: 1 1;
-    background-color: #e5e1da;
+    background-color: #a8c8e3;
   }
 }
 
@@ -105,11 +105,18 @@
 }
 /*------------------------------------program------------------------------------*/
 .PA {
-  color: white;
-  min-width: 200px;
-  animation-name: PASlide;
-  animation-timeline: scroll();
-  color: black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 15px;
+  display: inline-block;
+  flex-wrap: wrap;
+  background-color: rgba(156, 173, 173, 0.24);
+  /* background-image: -moz-linear-gradient(right, blue); */
+  /* border-width: 1px; */
+  /* border-color: #ad771a; */
+  box-shadow: #c6ddf0 5px 5px 5px;
 }
 
 /* .PA1 {
@@ -123,16 +130,29 @@
 .PA3 {
   background-color: rgb(30, 142, 246);
 } */
+.PAScroll {
+  display: inline-block;
+  animation: PAScrollAnm;
+  animation-timeline: view();
+}
+
+@keyframes PAScrollAnm {
+  0% {
+    transform: translateX(-20vw);
+  }
+  20% {
+    transform: translateX(30vw);
+  }
+}
 
 .teachItem {
   width: 30vw;
   height: auto;
   min-width: 300px;
+  margin: 20px;
   margin-bottom: 10px;
-  border-radius: 10px 25px;
-  border-width: 1px;
   text-align: justify;
-  background-color: antiquewhite;
+  background-color: rgba(184, 198, 198, 0.413);
   animation-timing-function: linear;
   /* animation-timeline: view(); */
   animation-duration: 2s;
@@ -510,6 +530,7 @@
   animation-fill-mode: forwards;
   animation-duration: 1s;
   animation-delay: 0ms;
+  font-size: 3rem;
   opacity: 0;
 }
 .ttdealership {
@@ -533,6 +554,8 @@
   animation-fill-mode: forwards;
   animation-duration: 1s;
   animation-delay: 1000ms;
+  text-align: justify;
+
   opacity: 0;
 }
 
