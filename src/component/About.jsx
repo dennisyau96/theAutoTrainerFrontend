@@ -30,16 +30,19 @@ const About = () => {
     <>
       <div className="justify-contents-center text-center p-4">
         <h1 className="pageTitle">About</h1>
-        <div className=" text-left">
-          <Carousel images={images} />
-          <p className="text-center px-50 py-10">
-            The Auto Trainer, founded by Paul Iacobazzi, is a company focused on
-            coaching, training, and placing individuals in the auto industry,
-            with a focus on helping people achieve high incomes. They offer a
-            mentorship program and claim a high placement rate.
-          </p>
+        <div className="place-item-center justify-content-center flex-nowrap">
+          <div className="">
+            <Carousel images={images} />
+            <div className="aboutPara">
+              The Auto Trainer, founded by Paul Iacobazzi, is a company focused
+              on coaching, training, and placing individuals in the auto
+              industry, with a focus on helping people achieve high incomes.
+              They offer a mentorship program and claim a high placement rate.
+            </div>
+          </div>
+
           <br />
-          <div className="flex-wrap grid-cols-2 flex justify-content-center">
+          <div className="flex-wrap grid-cols-2 flex justify-content-center aboutGrids">
             {/* Here's a more detailed breakdown: */}
             <div className="aboutGrid">
               <span className="aboutGridHeading">Focus</span>

@@ -131,17 +131,19 @@
   background-color: rgb(30, 142, 246);
 } */
 .PAScroll {
-  display: inline-block;
+  display: block;
   animation: PAScrollAnm;
   animation-timeline: view();
 }
 
 @keyframes PAScrollAnm {
   0% {
-    transform: translateX(-20vw);
+    transform: translateY();
+    opacity: 0%;
   }
   20% {
-    transform: translateX(30vw);
+    transform: translateY(0vh);
+    opacity: 100%;
   }
 }
 
@@ -152,13 +154,23 @@
   margin: 20px;
   margin-bottom: 10px;
   text-align: justify;
-  background-color: rgba(184, 198, 198, 0.413);
+  background-color: rgba(184, 198, 198, 0.742);
   animation-timing-function: linear;
-  /* animation-timeline: view(); */
-  animation-duration: 2s;
-  animation: teachItemsAnm;
+  animation-timeline: view();
+  animation-name: teachItemsAnm;
   padding: 20px;
   line-height: 2vwpx;
+}
+
+@keyframes teachItemsAnm {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0%;
+  }
+  20% {
+    transform: translateY(0vh);
+    opacity: 100%;
+  }
 }
 
 #introVideoDiv {
@@ -546,16 +558,15 @@
   animation-name: ttAnm;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 5f00ms;
+  animation-delay: 500ms;
   opacity: 0;
 }
 .ttdesc {
   animation-name: ttAnm;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
   text-align: justify;
-
   opacity: 0;
 }
 
@@ -565,5 +576,59 @@
   }
   100% {
     opacity: 100;
+  }
+}
+
+.PtipEach {
+  animation-name: PtipEach;
+  animation-timeline: view();
+  justify-content: center;
+  justify-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(42, 45, 55, 0.492);
+  color: aliceblue;
+  opacity: 100%;
+}
+
+@keyframes PtipEach {
+  0% {
+    opacity: 0%;
+    transform: translateY(3rem);
+  }
+  30% {
+    opacity: 100%;
+    transform: translateY(0rem);
+  }
+}
+
+.aboutGrids {
+  animation-name: aboutGridsAnm;
+  animation-timeline: view();
+}
+.aboutGrid {
+  animation-name: aboutGridsAnm;
+  animation-timeline: view();
+}
+
+@keyframes aboutGridsAnm {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+.aboutPara {
+  animation-name: aboutParaAnm;
+}
+
+@keyframes aboutParaAnm {
+  0% {
+  }
+  100% {
   }
 }
