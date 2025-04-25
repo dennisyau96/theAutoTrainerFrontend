@@ -167,10 +167,6 @@ body {
 /* media */
 
 @media (min-width: 0px) {
-  #ytIntro {
-    width: 300px;
-    height: auto;
-  }
   #mainContent {
     padding: 0px;
   }
@@ -222,9 +218,6 @@ body {
   }
   #programDetail {
     display: block;
-  }
-  #ytIntro {
-    width: 30vw;
   }
 }
 @media (min-width: 480px) {
@@ -279,10 +272,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  #ytIntro {
-    width: 300px;
-    height: auto;
-  }
   #carouselExampleIndicators {
     min-width: 400px;
     max-width: 500px;
@@ -372,8 +361,12 @@ body {
 }
 
 #sampleVideoIframe {
-  max-width: 600px;
-  min-width: 300px;
+  width: 600px;
+  height: 400px;
+}
+#ytIntro {
+  width: 600px;
+  height: 400px;
 }
 
 /*Testimonial*/
