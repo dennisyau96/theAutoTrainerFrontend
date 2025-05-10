@@ -13,7 +13,7 @@ const LandingPage = () => {
       <sction id="landingPage" className="flex-wrap flex">
         <div id="LPLeftHalf" className="inline-block">
           <img
-            src="../public/PaulAndJim.jpeg"
+            src="../../PaulAndJim.jpeg"
             className="z-2 w-auto justify-content-center justify-self-center hover:cursor-pointer hover:scale-105 rounded transition duration-150 "
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
