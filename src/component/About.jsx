@@ -28,8 +28,8 @@ const About = () => {
   ];
   return (
     <>
-      <div className="justify-contents-center text-center p-4">
-        <h1 className="pageTitle">About</h1>
+      <div className="justify-contents-center text-center p-4 bg-black">
+        <h1 className="pageTitle text-white">About</h1>
         <div className="place-item-center justify-content-center flex-nowrap">
           <div className="">
             <Carousel images={images} />
@@ -92,12 +92,7 @@ const About = () => {
               <span className="aboutGridHeading">Placement Rate</span>
               <span className="aboutGridContent">
                 The Auto Trainer claims a 90% placement rate with the 1200
-                people who have taken their program.Reviews: The Auto Trainer
-                has over 160 reviews with a 5-star rating. The reason behind his
-                amazing reviews is simple! His passion and methods of teaching
-                are from his heart and non scripted. He gives 100% in all of his
-                sessions and he speaks from 35 years of auto industry experience
-                with great stories and knowledge.
+                people who have taken their program.
               </span>
             </div>
             <div className="aboutGrid">

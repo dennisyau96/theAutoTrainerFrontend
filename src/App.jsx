@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // components
@@ -10,11 +11,16 @@ import Testimonials from "./component/Testimonials";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import Maintenance from "./component/Maintenance";
+import Tip from "./component/Tip";
+
 import "./App.css";
 import "./animation.css";
 import Nav from "./component/Nav";
 
 const App = () => {
+  // useEffect(() => {
+  //   window.alert("Use Google Chrome for best experience");
+  // }, []);
   return (
     <>
       <div className="w-screen" id="app">
@@ -22,6 +28,9 @@ const App = () => {
 
         <Header />
         <Nav />
+        {/* <div className="right-0 sticky-top">
+          <Tip />
+        </div> */}
 
         <div id="mainContent" className="  h-100">
           <Routes>

@@ -9,7 +9,7 @@ function Nav() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top  "
+        className="navbar navbar-expand-lg m-0  flex-wrap  sticky-top   "
         id="navDiv"
       >
         <div className="justify-self-left px-2   w-50 text-top navTitleIcon  ">
@@ -19,7 +19,7 @@ function Nav() {
           <ul className="navbar-nav flex-row gap-3 justify-content-end px-2">
             <li className="nav-item ">
               <Link
-                className="nav-link   active:text-bold navBtn"
+                className="nav-link   active:text-bold navBtn hover:scale-120 active:text-slate-400"
                 aria-current="page"
                 to="/"
               >
@@ -28,20 +28,23 @@ function Nav() {
             </li>
 
             <li className="nav-item  rounded-4  ">
-              <Link className="nav-link navBtn" to="/programs">
+              <Link className="nav-link navBtn hover:scale-120" to="/programs">
                 Programs
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link navBtn" to="/testimonials">
-                Testmonials
+              <Link
+                className="nav-link navBtn hover:scale-120"
+                to="/testimonials"
+              >
+                Testimonials
               </Link>
             </li>
 
             <li className="nav-item">
               <Link
-                className="nav-link  navBtn textcolor4"
+                className="nav-link  navBtn textcolor4 hover:scale-120"
                 aria-disabled="true"
                 to="about"
               >
@@ -67,28 +70,28 @@ function Nav() {
               className=" mt-1  dropDownList py-2 transition-all duration-1000"
               aria-expanded="false"
             >
-              <ul className="flex-wrap">
+              <ul className="flex-wrap mr-1">
                 <li>
                   <Link
-                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item  navBtn nav-link"
+                    className="  hover:text-gray-400 shrinkNavBtn dropdown-item  navBtn nav-link hover:scale-120"
                     to="/"
                     onClick={() => toggle()}
                   >
                     Home
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
-                    className="     shrinkNavBtn dropdown-item navBtn"
+                    className="     shrinkNavBtn dropdown-item navBtn hover:scale-120"
                     to="/reviews"
                     onClick={() => toggle()}
                   >
                     Google Reviews
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
-                    className="  shrinkNavBtn dropdown-item navBtn"
+                    className="  shrinkNavBtn dropdown-item navBtn hover:scale-120"
                     to="/testimonials"
                     onClick={() => toggle()}
                   >
@@ -98,7 +101,7 @@ function Nav() {
 
                 <li className="">
                   <Link
-                    className="  shrinkNavBtn dropdown-item "
+                    className="  shrinkNavBtn dropdown-item hover:scale-120"
                     to="/programs"
                     onClick={() => toggle()}
                   >
@@ -107,7 +110,7 @@ function Nav() {
                 </li>
                 <li>
                   <Link
-                    className="     shrinkNavBtn dropdown-item"
+                    className="    shrinkNavBtn dropdown-item hover:scale-120"
                     to="/about"
                     onClick={() => toggle()}
                   >

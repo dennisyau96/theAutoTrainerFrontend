@@ -5,64 +5,14 @@ const Testimonials = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="justify-items-center py-8">
-      <h1 className="pageTitle my-3"> Testimonials</h1>
+    <div className="justify-items-center p-4 bg-black">
+      <h1 className="pageTitle my-3 text-white"> Testimonials</h1>
       <div
         id="carouselExampleIndicators"
-        className="carousel slide w-50 h-auto  min-h-50 jusify-contents-center  jusify-self-center border-black "
+        className="carousel slide w-auto h-auto  min-h-50 jusify-contents-center  jusify-self-center border-black "
       >
-        <div className="carousel-indicators my-3">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 3"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 3"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 3"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="6"
-            aria-label="Slide 3"
-            aria-current="true"
-          ></button>
-        </div>
         <div
-          className="carousel-inner BGcolor2 p-7 rounded-3  "
+          className="carousel-inner bg-slate-500 p-7 rounded-3  "
           id="carousel-inner"
         >
           <div className="carousel-item active">
@@ -199,7 +149,7 @@ const Testimonials = () => {
             <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Ian Quinn</span>
               <br />
-              <span className="ttdealership">Destination Honda</span>
+              <span className="ttdealership">Destination Kingsway Honda</span>
               <br></br>
               <span className="ttposition">Former General Manager</span>
             </div>
@@ -214,29 +164,80 @@ const Testimonials = () => {
           </div>
         </div>
         <button
-          className="carousel-control-prev text-black m-3"
+          className="carousel-control-prev m-2 hover:bg-black"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
+            className="carousel-control-prev-icon bg-black p-2 m-2"
             aria-hidden="true"
           ></span>
-          <span className="visually-hidden">Previous</span>
+          <span className="visually-hidden m-2">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next m-2 hover:bg-black"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
           <span
-            className="carousel-control-next-icon"
+            className="carousel-control-next-icon bg-black p-2 m-2"
             aria-hidden="true"
           ></span>
-          <span className="visually-hidden">Next</span>
+          <span className="visually-hidden m-2">Next</span>
         </button>
+
+        <div className="carousel-indicators my-10 ">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 3"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 3"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            aria-label="Slide 3"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+            aria-label="Slide 3"
+            aria-current="true"
+          ></button>
+        </div>
       </div>
     </div>
   );
