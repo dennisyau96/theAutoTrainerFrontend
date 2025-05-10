@@ -112,11 +112,13 @@
   padding: 15px;
   display: inline-block;
   flex-wrap: wrap;
-  background-color: rgba(156, 173, 173, 0.24);
+  background-color: rgb(55, 64, 68);
+  border-radius: 5px 5px 5px 5px;
   /* background-image: -moz-linear-gradient(right, blue); */
   /* border-width: 1px; */
   /* border-color: #ad771a; */
-  box-shadow: #c6ddf0 5px 5px 5px;
+  color: white;
+  box-shadow: #4a86b7 5px 5px 5px;
 }
 
 /* .PA1 {
@@ -146,20 +148,32 @@
     opacity: 100%;
   }
 }
+#pObj {
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+#programIntro {
+  max-width: 450px;
+  flex-wrap: wrap;
+}
+
+#teachItemCont {
+  max-width: 800px;
+  place-content: center;
+  place-self: center;
+}
 
 .teachItem {
-  width: 30vw;
-  height: auto;
-  min-width: 300px;
+  max-width: 300px;
   margin: 20px;
   margin-bottom: 10px;
-  text-align: justify;
-  background-color: rgba(184, 198, 198, 0.742);
+  text-align: center;
+  background-color: rgba(230, 250, 250, 0.742);
   animation-timing-function: linear;
   animation-timeline: view();
   animation-name: teachItemsAnm;
   padding: 20px;
-  line-height: 2vwpx;
 }
 
 @keyframes teachItemsAnm {
@@ -171,6 +185,10 @@
     transform: translateY(0vh);
     opacity: 100%;
   }
+}
+
+#videoCont {
+  place-content: center;
 }
 
 #introVideoDiv {
@@ -204,17 +222,15 @@
   margin-top: 20px;
   /* animation-name: sucessfulStoryAnm; */
   /* animation-timeline: view(); */
-  animation-duration: 2s;
+  /* animation-duration: 2s; */
 
-  max-width: 1000px;
+  max-width: 800px;
   justify-self: center;
   justify-content: center;
   justify-items: center;
-  text-align: center;
-
   border: none;
   border-radius: 25px;
-  box-shadow: 15px 15px 15px rgb(242, 241, 241);
+  box-shadow: 15px 15px 15px rgb(219, 229, 238);
 }
 @keyframes sucessfulStoryAnm {
   0% {
@@ -241,31 +257,26 @@
 }
 
 .storyPicA {
-  animation-name: storyPicAAnm;
+  /* animation-name: storyPicAAnm; */
   /* animation-timeline: view(); */
-  animation-duration: 2s;
+  /* animation-duration: 2s; */
 
   justify-items: center;
   justify-self: center;
-  text-align: center;
   justify-content: center;
 
-  display: block;
+  display: inline-block;
   position: static;
-  height: auto;
   width: auto;
 }
 .storyPicB {
-  animation-name: storyPicBAnm;
+  /* animation-name: storyPicBAnm; */
   justify-items: center;
   justify-self: center;
-  text-align: center;
   justify-content: center;
   /* animation-timeline: view(); */
-  animation-duration: 2s;
-
-  display: block;
-  position: static;
+  /* animation-duration: 2s; */
+  display: inline-block;
   height: auto;
   width: auto;
 }
@@ -296,9 +307,9 @@
   }
 }
 .storyName {
-  animation-name: storyNameAnm;
+  /* animation-name: storyNameAnm; */
   /* animation-timeline: view(); */
-  animation-duration: 2s;
+  /* animation-duration: 2s; */
 
   font-size: 3rem;
 }
@@ -313,15 +324,15 @@
   }
 }
 .storyDetail {
-  animation-name: storyDetailAnm;
+  /* animation-name: storyDetailAnm; */
   /* animation-timeline: view(); */
-  animation-duration: 2s;
+  /* animation-duration: 2s; */
 
   text-align: justify;
 }
 @keyframes storyDetailAnm {
   0% {
-    transform: translateX(-10vw);
+    transform: translateX(10vw);
     opacity: 0%;
   }
   100% {
@@ -331,9 +342,9 @@
 }
 
 .storyDealership {
-  animation-name: storyDealershipAnm;
+  /* animation-name: storyDealershipAnm; */
   /* animation-timeline: view(); */
-  animation-duration: 2s;
+  /* animation-duration: 2s; */
 
   font-weight: bolder;
   font-size: 1.2rem;
@@ -341,7 +352,7 @@
 }
 @keyframes storyDealershipAnm {
   0% {
-    transform: translateX(3vw);
+    transform: translateX(0vw);
     opacity: 0%;
   }
   100% {
@@ -358,7 +369,7 @@
   display: inline-block;
   margin: 20px;
 
-  color: black;
+  color: rgb(255, 255, 255);
 
   font-variant: small-caps;
   font-weight: bold;
@@ -415,7 +426,7 @@
   font-size: 1.3rem;
   line-height: 1.3rem;
   font-style: italic;
-  color: rgb(30, 63, 80);
+  color: rgb(174, 230, 167);
   text-align: justify;
   font-family: "Trebuchet MS", sans-serif;
 }
@@ -452,6 +463,15 @@
   animation-name: LPPBtnAnm;
   animation-duration: 4s;
 }
+
+.LPTmBtn {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  animation-name: LPPBtnAnm;
+  animation-duration: 4s;
+}
 @keyframes LPPBtnAnm {
   0% {
     opacity: 0;
@@ -461,12 +481,14 @@
   }
 }
 .LPPBtn:hover {
-  font-size: 2rem;
-  color: rgb(50, 73, 107);
-  font-weight: 700;
+  color: rgb(79, 106, 147);
   text-decoration: none;
-  border-width: 4px;
-  border-color: rgb(50, 73, 107);
+  border-color: rgb(79, 106, 147);
+}
+.LPTmBtn:hover {
+  color: rgb(200, 30, 30);
+  text-decoration: none;
+  border-color: rgb(200, 30, 30);
 }
 
 .LPLogo {
@@ -541,7 +563,7 @@
   animation-name: ttAnm;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 0ms;
+  animation-delay: 300ms;
   font-size: 3rem;
   opacity: 0;
 }
@@ -552,14 +574,16 @@
   animation-delay: 300ms;
   background-color: (235, 235, 211);
   opacity: 0;
+  font-size: 1.5rem;
 }
 
 .ttposition {
   animation-name: ttAnm;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 500ms;
+  animation-delay: 300ms;
   opacity: 0;
+  font-style: italic;
 }
 .ttdesc {
   animation-name: ttAnm;
@@ -602,6 +626,8 @@
   }
 }
 
+/*----------------------------About------------------------------------*/
+
 .aboutGrids {
   animation-name: aboutGridsAnm;
   animation-timeline: view();
@@ -609,11 +635,12 @@
 .aboutGrid {
   animation-name: aboutGridsAnm;
   animation-timeline: view();
+  background-color: #90bce0;
 }
 
 @keyframes aboutGridsAnm {
   0% {
-    transform: translateY(30px);
+    transform: translateY(20px);
     opacity: 0;
   }
   30% {
@@ -624,6 +651,13 @@
 
 .aboutPara {
   animation-name: aboutParaAnm;
+  max-width: 500px;
+  place-self: center;
+  text-align: justify;
+  margin: 2rem;
+  color: white;
+  line-height: 1.5rem;
+  flex-wrap: wrap;
 }
 
 @keyframes aboutParaAnm {
@@ -631,4 +665,52 @@
   }
   100% {
   }
+}
+
+.aboutGrid {
+  margin: 1.5vw;
+  width: 25vw;
+  min-width: 300px;
+  background-color: rgba(159, 201, 237, 0.9);
+  padding: 1.5vw;
+  border-radius: 5px 5px;
+  justify-self: center;
+}
+
+.aboutGrid:hover {
+  scale: 1.1;
+  /* width: 25vw;
+  min-width: 300px;
+  background-color: rgba(198, 187, 225, 0.268);
+  padding: 3vw;
+  border-radius: 5px 5px;
+  justify-self: center; */
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.aboutGridHeading {
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+.aboutGridContent {
+  font-weight: normal;
+  display: block;
+  text-align: center;
+}
+
+/*------------------- Tip --------------------*/
+#tipDiv {
+  width: 14rem;
+  background-color: #90bce0;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  place-content: right;
+  place-self: right;
+  z-index: 0;
 }
