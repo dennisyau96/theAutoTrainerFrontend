@@ -42,10 +42,16 @@ const Program = () => {
 
         <div className=" grid grid-auto-flow grid-cols-3" id="programDetail">
           <div className="justify-items-center ">
-            <h3 className="text-center py-4 text-white italic" id="pObj">
+            <h3
+              className="text-center py-4 text-white italic flex-wrap flex px-1"
+              id="pObj"
+            >
               Learn to become a Sucessful Car Salesperson
             </h3>
-            <p className="text-justify text-white   " id="programIntro">
+            <p
+              className="text-justify text-white flex-wrap flex px-1 "
+              id="programIntro"
+            >
               Our primary focus is to train you with the necessary skill set to
               get you placed for not just a job but a career in the car
               business. We have now placed over 1000 candidates with 250 top
@@ -86,7 +92,10 @@ const Program = () => {
           </div>
 
           <div className=" mx-10">
-            <div className="p-4 text-2xl text-white font-monospace">
+            <div
+              className="p-4 text-2xl text-white font-monospace flex flex-wrap text-center"
+              id="PTIP"
+            >
               The Auto Trainer (Online) Will Teach You
             </div>
             <div
@@ -118,15 +127,15 @@ const Program = () => {
               do best.
             </div>
 
-            <div className="Ptip m-4">
+            <div className="Ptip m-4" id="Ptip">
               <h3>Paul’s tips of the day</h3>
-              <div className="m-2">
+              <div className="m-3 italic">
                 The first 10 words you say are more important than your next
                 1,000. Please don't ask a customer if they have been helped when
                 you have seen then stand in your showroom for 5 minutes by
                 themselves.
               </div>
-              <div className="m-2">
+              <div className="m-3 font-bold">
                 Never make the mistake of prejudging a potential customer just
                 because they are wearing casual clothing in your dealership.
                 Treat them always like you wanted to be treated and the results
@@ -134,7 +143,7 @@ const Program = () => {
                 all about training and motivating people that are at a
                 crossroads in their career.
               </div>{" "}
-              <div className="m-2">
+              <div className="m-3 italic ">
                 No experience or some experience doesn't really matter. We want
                 people to embrace the concepts of building a successful platform
                 through our mentoring and coaching program. More often than not

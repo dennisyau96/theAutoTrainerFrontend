@@ -149,12 +149,10 @@
   }
 }
 #pObj {
-  max-width: 500px;
   flex-wrap: wrap;
 }
 
 #programIntro {
-  max-width: 450px;
   flex-wrap: wrap;
 }
 
@@ -215,150 +213,96 @@
   }
 }
 
+#programDiv {
+  background-image: url("https://player.vimeo.com/video/397054458");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+#sampleVideoIframe {
+  width: 600px;
+  height: 400px;
+}
+#ytIntro {
+  width: 600px;
+  height: 400px;
+}
+s
+
 /*----------------------------------------story page--------------------------------------- */
 
+.homeSection2 {
+  display: block;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+}
+
+.storyName {
+  font-size: 2rem;
+}
 .sucessfulStory {
   padding: 4vw;
   margin-top: 20px;
-  /* animation-name: sucessfulStoryAnm; */
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
-
   max-width: 800px;
+  background-color: #d3dfea;
   justify-self: center;
   justify-content: center;
   justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
   border: none;
   border-radius: 25px;
-  box-shadow: 15px 15px 15px rgb(219, 229, 238);
-}
-@keyframes sucessfulStoryAnm {
-  0% {
-    /* transform: translateY(100px); */
-    transform: translateY(0px);
-
-    opacity: 0%;
-    scale: 0.5;
-  }
-  /* 10% {
-    opacity: 100%;
-    scale: 1;
-  }
-  80% {
-    opacity: 90%;
-    scale: 1;
-  } */
-  100% {
-    transform: translateY(0px);
-    opacity: 0%;
-    scale: 1;
-    background-image: radial-gradient(gray white);
-  }
+  box-shadow: 10px 10px 10px rgb(213, 214, 214);
 }
 
 .storyPicA {
-  /* animation-name: storyPicAAnm; */
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
-
-  justify-items: center;
   justify-self: center;
   justify-content: center;
-
-  display: inline-block;
-  position: static;
-  width: auto;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 .storyPicB {
-  /* animation-name: storyPicBAnm; */
-  justify-items: center;
   justify-self: center;
   justify-content: center;
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
-  display: inline-block;
-  height: auto;
-  width: auto;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+}
+.storyImg {
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 
-@keyframes storyPicAAnm {
-  0% {
-    /* transform: translateX(-5vw); */
-    transform: translateX(0vw);
-
-    opacity: 0%;
-  }
-  100% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  }
-}
-@keyframes storyPicBAnm {
-  0% {
-    /* transform: translateX(5vw);
-     */
-    transform: translateX(0vw);
-
-    opacity: 0%;
-  }
-  100% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  }
-}
 .storyName {
-  /* animation-name: storyNameAnm; */
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
-
   font-size: 3rem;
 }
-@keyframes storyNameAnm {
-  0% {
-    scale: 1.2;
-    opacity: 0%;
-  }
-  100% {
-    scale: 1;
-    opacity: 100%;
-  }
-}
-.storyDetail {
-  /* animation-name: storyDetailAnm; */
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
 
+.storyDetail {
   text-align: justify;
-}
-@keyframes storyDetailAnm {
-  0% {
-    transform: translateX(10vw);
-    opacity: 0%;
-  }
-  100% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  }
 }
 
 .storyDealership {
-  /* animation-name: storyDealershipAnm; */
-  /* animation-timeline: view(); */
-  /* animation-duration: 2s; */
-
   font-weight: bolder;
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-@keyframes storyDealershipAnm {
-  0% {
-    transform: translateX(0vw);
-    opacity: 0%;
-  }
-  100% {
-    transform: translateX(0vw);
-    opacity: 100%;
-  }
 }
 
 /*--------------------Landing Page---------------------- */
@@ -366,8 +310,7 @@
 .landingPageTitle {
   animation-name: landingPageTitleAnm;
   animation-duration: 0.7s;
-  display: inline-block;
-  margin: 20px;
+  display: block;
 
   color: rgb(255, 255, 255);
 
@@ -409,8 +352,7 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0%;
-  font-size: 2rem;
-  line-height: 2rem;
+
   text-align: justify;
   font-family: "Trebuchet MS", sans-serif;
   color: rgb(255, 255, 255);
@@ -423,8 +365,7 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0%;
-  font-size: 1.3rem;
-  line-height: 1.3rem;
+
   font-style: italic;
   color: rgb(174, 230, 167);
   text-align: justify;
@@ -439,10 +380,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
-  font-size: 1.5rem;
-  line-height: 2rem;
+
   color: rgb(255, 255, 255);
-  line-height: 40px;
   font-family: "Trebuchet MS", sans-serif;
 }
 @keyframes LPPAAnm {
@@ -554,6 +493,31 @@
 }
 
 /*-----------------------testimonial-------------------------*/
+
+/*Testimonial*/
+.testiTextBG {
+  background-color: rgb(235, 235, 211);
+}
+
+.ttname {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.ttdealership {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ttposition {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.ttdesc {
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-align: justify;
+}
 
 .testiTextBG {
   /* background-color: rgb(235, 235, 211); */
