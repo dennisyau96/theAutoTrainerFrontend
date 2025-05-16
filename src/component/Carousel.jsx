@@ -20,7 +20,7 @@ const Carousel = ({ images, autoPlay = true, interval = 5000 }) => {
   }, [currentIndex, autoPlay, interval]);
 
   return (
-    <div className="carousel my-4">
+    <div className="carousel my-4" id="ProgCarousel">
       <button onClick={goToPrev} className="nav-button left">
         ‹
       </button>

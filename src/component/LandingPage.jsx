@@ -62,7 +62,7 @@ const LandingPage = () => {
         <div id="LPRightHalf" className="inline-block">
           {" "}
           <h1
-            className=" landingPageTitle relative pb-10 block cursor-pointer"
+            className=" landingPageTitle  pb-10 block cursor-pointer"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >

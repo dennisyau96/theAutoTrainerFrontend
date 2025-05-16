@@ -28,11 +28,12 @@ const About = () => {
   ];
   return (
     <>
-      <div className="justify-contents-center text-center p-4 bg-black">
+      <div className="justify-contents-center text-center py-4 bg-black">
         <h1 className="pageTitle text-white">About</h1>
+        <Carousel images={images} />
+
         <div className="place-item-center justify-content-center flex-nowrap">
           <div className="">
-            <Carousel images={images} />
             <div className="aboutPara">
               The Auto Trainer, founded by Paul Iacobazzi, is a company focused
               on coaching, training, and placing individuals in the auto
