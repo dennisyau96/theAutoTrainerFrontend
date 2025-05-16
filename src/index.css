@@ -189,7 +189,7 @@ header {
 
   .LPintroPara {
     /* background-color: rgba(255, 255, 255, 0.501); */
-    width: 100%;
+    max-width: 95%;
   }
   #carouselExampleIndicators {
     min-width: 400px;
@@ -278,7 +278,7 @@ header {
   }
 
   .LPintroPara {
-    width: 100%;
+    max-width: 95%;
   }
   #carouselExampleIndicators {
     min-width: 400px;
@@ -320,6 +320,7 @@ header {
     text-align: center;
   }
   #programIntro {
+    width: 95%;
     max-width: 700px;
     flex-wrap: wrap;
   }
