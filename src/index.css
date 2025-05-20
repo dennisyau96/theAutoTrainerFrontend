@@ -5,12 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   /* display: flex; */
   /* place-items: center; */
   min-height: 100vh;
-  min-width: 400px;
 
   max-width: 100vw;
   transition-delay: 300ms;
@@ -19,6 +19,17 @@ body {
 }
 header {
   width: 100vw;
+}
+
+#mainContent {
+  justify-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 
 /* class selector*/
@@ -61,6 +72,19 @@ header {
 }
 
 /* id selector */
+#mainContent {
+  min-width: 100vw;
+}
+
+#programPart1 > * > * {
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+}
 #mainContent {
   min-height: 100vh;
 }

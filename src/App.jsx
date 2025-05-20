@@ -32,7 +32,7 @@ const App = () => {
           <Tip />
         </div> */}
 
-        <div id="mainContent" className="  h-100">
+        <div id="mainContent" className=" h-100 bg-black">
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />
