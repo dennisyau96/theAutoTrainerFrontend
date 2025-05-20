@@ -126,9 +126,19 @@ header {
 }
 
 .Ptip {
-  background-color: #b3c8cf;
-  padding: 50px;
+  max-width: 600px;
+  padding: 2vw;
   text-align: justify;
+  width: 95vw;
+  position: relative block;
+  justify-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 
 /* media */
@@ -192,7 +202,7 @@ header {
     max-width: 95%;
   }
   #carouselExampleIndicators {
-    min-width: 400px;
+    width: 95vw;
     max-width: 500px;
   }
   #programDetail {
@@ -281,7 +291,7 @@ header {
     max-width: 95%;
   }
   #carouselExampleIndicators {
-    min-width: 400px;
+    width: 95vw;
     max-width: 500px;
   }
 
@@ -290,6 +300,10 @@ header {
   }
   #sampleVideoIframe {
     max-width: 100vw;
+  }
+  #programIntro {
+    max-width: 95vw;
+    flex-wrap: wrap;
   }
 }
 
@@ -320,7 +334,7 @@ header {
     text-align: center;
   }
   #programIntro {
-    width: 95%;
+    width: 95vw;
     max-width: 700px;
     flex-wrap: wrap;
   }
@@ -338,7 +352,7 @@ header {
     max-width: 100vw;
   }
   #Ptip {
-    max-width: 700px;
+    max-width: 600px;
     position: relative block;
     justify-self: center;
     justify-self: center;
@@ -348,6 +362,10 @@ header {
     place-content: center;
     place-self: center;
     place-items: center;
+    background-color: #b3c8cf;
+    padding: 2vw;
+    text-align: justify;
+    width: 95vw;
   }
 }
 
@@ -401,7 +419,8 @@ header {
     max-width: 100vw;
   }
   #Ptip {
-    max-width: 700px;
+    max-width: 600px;
+
     position: relative block;
     justify-self: center;
     justify-self: center;
@@ -411,6 +430,9 @@ header {
     place-content: center;
     place-self: center;
     place-items: center;
+    padding: 2vw;
+    text-align: justify;
+    width: 95vw;
   }
 }
 
