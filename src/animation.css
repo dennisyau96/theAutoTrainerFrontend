@@ -234,13 +234,22 @@ s
 
 .homeSection2 {
   display: block;
-  justify-self: center;
+  /* justify-self: center;
   justify-content: center;
   justify-items: center;
   text-align: center;
   place-content: center;
   place-self: center;
-  place-items: center;
+  place-items: center; */
+  /*--*/
+  justify-self: left;
+  justify-self: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  place-content: left;
+  place-self: left;
+  place-items: left;
 }
 
 .storyName {
@@ -251,44 +260,45 @@ s
   margin-top: 20px;
   max-width: 800px;
   background-color: #d3dfea;
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  place-content: center;
-  place-self: center;
-  place-items: center;
+  justify-self: left;
+  justify-self: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  place-content: left;
+  place-self: left;
+  place-items: left;
   border: none;
   border-radius: 25px;
   box-shadow: 10px 10px 10px rgb(213, 214, 214);
 }
 
 .storyPicA {
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  place-content: center;
-  place-self: center;
-  place-items: center;
+  justify-self: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  place-content: left;
+  place-self: left;
+  place-items: left;
 }
 .storyPicB {
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  place-content: center;
-  place-self: center;
-  place-items: center;
+  justify-self: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  place-content: left;
+  place-self: left;
+  place-items: left;
 }
 .storyImg {
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  place-content: center;
-  place-self: center;
-  place-items: center;
+  justify-self: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  place-content: left;
+  place-self: left;
+  place-items: left;
 }
 
 .storyName {
@@ -296,7 +306,7 @@ s
 }
 
 .storyDetail {
-  text-align: justify;
+  text-align: left;
 }
 
 .storyDealership {

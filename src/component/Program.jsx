@@ -40,8 +40,8 @@ const Program = () => {
         </h1>
         {/* <h2 className="pt-10 text-white"></h2> */}
 
-        <div className=" grid grid-auto-flow grid-cols-3" id="programDetail">
-          <div className="justify-items-center ">
+        <div className=" " id="programDetail">
+          <div className="justify-items-center " id="programPart1">
             <h3
               className="text-center py-4 text-white italic flex-wrap flex px-1"
               id="pObj"
