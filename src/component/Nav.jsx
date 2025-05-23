@@ -33,6 +33,16 @@ function Nav() {
               </Link>
             </li>
 
+            <li className="nav-item ">
+              <Link
+                className="nav-link navBtn hover:scale-120"
+                aria-current="page"
+                to="/reviews"
+              >
+                Google Reviews
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link
                 className="nav-link navBtn hover:scale-120"
@@ -80,7 +90,16 @@ function Nav() {
                     Home
                   </Link>
                 </li>
-                {/* <li>
+                <li className="">
+                  <Link
+                    className="  shrinkNavBtn dropdown-item hover:scale-120"
+                    to="/programs"
+                    onClick={() => toggle()}
+                  >
+                    Programs
+                  </Link>
+                </li>
+                <li>
                   <Link
                     className="     shrinkNavBtn dropdown-item navBtn hover:scale-120"
                     to="/reviews"
@@ -88,7 +107,7 @@ function Nav() {
                   >
                     Google Reviews
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link
                     className="  shrinkNavBtn dropdown-item navBtn hover:scale-120"
@@ -99,15 +118,6 @@ function Nav() {
                   </Link>
                 </li>
 
-                <li className="">
-                  <Link
-                    className="  shrinkNavBtn dropdown-item hover:scale-120"
-                    to="/programs"
-                    onClick={() => toggle()}
-                  >
-                    Programs
-                  </Link>
-                </li>
                 <li>
                   <Link
                     className="    shrinkNavBtn dropdown-item hover:scale-120"

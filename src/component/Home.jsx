@@ -12,10 +12,13 @@ const Home = () => {
         <section id="homeSection1" className="pt-10">
           <h2 className="subtitleA"></h2>
         </section>
-        <h2 className="subtitleB">Sucessful Story</h2>
+        <h2 className="subtitleB textcolor1">Sucessful Story</h2>
 
         <div id="homeSection2" className="py-5   homeSection2 overflow-auto ">
-          <div id="story1" className="sucessfulStory">
+          <div
+            id="story1"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../Essiano Majidi.JPEG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Essiano Majidi</span>
@@ -28,7 +31,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story2" className="sucessfulStory ">
+          <div
+            id="story2"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../Alex Nguyen.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Alex Nguyen</span>
@@ -42,7 +48,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story3" className="sucessfulStory ">
+          <div
+            id="story3"
+            className="sucessfulStory flex flex-wrap justify-content-center "
+          >
             <img
               src="https://img.sm360.ca/ir/h250/images/employee/dilawri-group-of-companies/braeden-bhullar-500x500-v21681244853621.png"
               alt=""
@@ -60,7 +69,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story4" className="sucessfulStory ">
+          <div
+            id="story4"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../NavGarg.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Nav Garg</span>
@@ -73,7 +85,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story5" className="sucessfulStory ">
+          <div
+            id="story5"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../SarahGreen.jpeg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Sarah Green</span>
@@ -99,7 +114,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story7" className="sucessfulStory ">
+          <div
+            id="story7"
+            className="sucessfulStory  flex flex-wrap justify-content-center"
+          >
             <img src="../../Levi.jpg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Levi Generale</span>
@@ -114,7 +132,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story8" className="sucessfulStory ">
+          <div
+            id="story8"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../CurtisKmyta.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Curtis Kmyta</span>
@@ -129,7 +150,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story9" className="sucessfulStory ">
+          <div
+            id="story9"
+            className="sucessfulStory flex flex-wrap justify-content-center "
+          >
             <img src="../../PeterVetra.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Peter Vetra</span>
@@ -143,7 +167,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story10" className="sucessfulStory  ">
+          <div
+            id="story10"
+            className="sucessfulStory flex flex-wrap justify-content-center "
+          >
             <img src="../../AaronLi.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Aaron Li</span>
@@ -156,7 +183,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story11" className="sucessfulStory ">
+          <div
+            id="story11"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <span className="flex flex-wrap justify-content-center">
               <img
                 src="../../FrankFang.JPG"
@@ -183,7 +213,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story12" className="sucessfulStory ">
+          <div
+            id="story12"
+            className="sucessfulStory flex flex-wrap justify-content-center"
+          >
             <img src="../../DestineeBotchar.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Destinee Botchar</span>
@@ -196,7 +229,10 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div id="story13" className="sucessfulStory  ">
+          <div
+            id="story13"
+            className="sucessfulStory flex flex-wrap justify-content-center "
+          >
             <img src="../../RomanIacobazzi.jpg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Roman Iacobazzi</span>

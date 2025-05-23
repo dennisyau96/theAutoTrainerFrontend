@@ -133,6 +133,11 @@ const LandingPage = () => {
               Program
             </Link>
           </button>
+          <button className="relative rounded-5  px-4 py-1 LPGvBtn my-3 mx-3  transition-all duration-150">
+            <Link to="/reviews" className="nav-link ">
+              Google Reviews
+            </Link>
+          </button>
           <button className="relative rounded-5  px-4 py-1 LPTmBtn my-3 mx-3  transition-all duration-150">
             <Link to="/testimonials" className="nav-link ">
               Testimonials
@@ -146,22 +151,21 @@ const LandingPage = () => {
                 .scrollIntoView({ behavior: "smooth" });
             }}
           >
-            <div className="LPArrowBlock mt-1   drop-shadow-2xl rounded-4 p-3 hover:scale-110 transition-all duration-150">
-              <span className="block text-white text-3xl    cursor-pointer transition-all ease-in-out ">
+            <div className="LPArrowBlock mt-1   drop-shadow-2xl rounded-4 p-2 hover:scale-110 transition-all duration-150 ">
+              <span className=" text-slate-400 text-3xl    cursor-pointer transition-all ease-in-out ">
                 {/* <i className="block fa fa-arrow-down m-3 text-gray-700 text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce  "></i>
               Scroll Down
               <i className="block fa fa-arrow-down m-3 text-gray-700 text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce "></i> */}
-                <br />
                 To See The Successful Stories
+                <svg
+                  className="svg-icon down-arrow scale-7  animate-bounce motion-reduce:animate-bounce "
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 150 51.92"
+                  style={{ fill: "white" }}
+                >
+                  <path d="M46.262,51.92,0,5.657,5.657,0,46.262,40.6,86.867,0l5.656,5.657Z"></path>
+                </svg>
               </span>
-              <svg
-                className="svg-icon down-arrow scale-7  animate-bounce motion-reduce:animate-bounce "
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 150 51.92"
-                style={{ fill: "white" }}
-              >
-                <path d="M46.262,51.92,0,5.657,5.657,0,46.262,40.6,86.867,0l5.656,5.657Z"></path>
-              </svg>
 
               {/* <i className="block fa fa-arrow-down m-3 text-black text-3xl   cursor-pointer transition-all ease-in-out animate-bounce motion-reduce:animate-bounce "></i> */}
             </div>
