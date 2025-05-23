@@ -90,12 +90,29 @@ header {
 }
 
 #introVideo {
-  width: 100%;
+  width: 95%;
+  max-width: 95vw;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 #footerDiv {
-  width: 100%;
+  width: 95%;
+  max-width: 95vw;
+
   bottom: 0px;
   text-align: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
 }
 
 #headerDiv {
