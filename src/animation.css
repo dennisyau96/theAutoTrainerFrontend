@@ -171,7 +171,7 @@
 }
 
 .teachItem {
-  max-width: 300px;
+  max-width: 350px;
   margin: 20px;
   margin-bottom: 10px;
   text-align: center;
@@ -180,7 +180,6 @@
   animation-timeline: view();
   animation-name: teachItemsAnm;
   padding: 20px;
-
   transition: all;
   transition-duration: 200ms;
 }
@@ -283,6 +282,51 @@
   font-variant: normal;
   text-decoration: none;
   color: inherit;
+}
+
+.ProgramCaro {
+  justify-content: center;
+  justify-self: center;
+
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+  max-width: 95vw;
+}
+
+/*------------------- Tip --------------------*/
+#tipDiv {
+  width: auto;
+  background-color: #90bce0;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  place-content: right;
+  place-self: right;
+  z-index: 0;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+}
+
+#Ptip {
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+  max-width: 95vw;
+  min-width: 200px;
+  flex: auto;
+  flex-wrap: wrap;
 }
 /*----------------------------------------story page--------------------------------------- */
 
@@ -748,18 +792,6 @@
   display: block;
   text-align: left;
   padding: 0.5rem;
-}
-
-/*------------------- Tip --------------------*/
-#tipDiv {
-  width: 14rem;
-  background-color: #90bce0;
-  position: absolute;
-  top: 100px;
-  right: 0px;
-  place-content: right;
-  place-self: right;
-  z-index: 0;
 }
 
 /*------------------- Google Reviews --------------------*/

@@ -65,7 +65,9 @@ const Program = () => {
               </span>
             </div>
           </div>
-          <Carousel images={images} />
+          <div className="ProgramCaro">
+            <Carousel images={images} />
+          </div>
           <div className=" border-black m-10  flex flex-wrap " id="videoCont">
             <div>
               <iframe
