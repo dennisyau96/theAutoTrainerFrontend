@@ -304,6 +304,9 @@
   place-content: left;
   place-self: left;
   place-items: left;
+  max-height: 100vh;
+  max-width: 95vw;
+  padding: 2rem;
 }
 
 .storyName {
@@ -673,11 +676,9 @@
 .aboutGrids {
   animation-name: aboutGridsAnm;
   animation-timeline: view();
+  padding: 10px;
 }
 .aboutGrid {
-  animation-name: aboutGridsAnm;
-  animation-timeline: view();
-  background-color: #90bce0;
 }
 
 @keyframes aboutGridsAnm {
@@ -710,13 +711,17 @@
 }
 
 .aboutGrid {
-  margin: 1.5vw;
-  width: 25vw;
+  margin: 2vw;
+  max-width: 400px;
   min-width: 300px;
-  background-color: rgba(159, 201, 237, 0.9);
-  padding: 1.5vw;
-  border-radius: 5px 5px;
+  background-color: rgba(68, 95, 121, 0.9);
+  padding: vw;
+  border-radius: 15px 15px;
   justify-self: center;
+  animation-name: aboutGridsAnm;
+  animation-timeline: view();
+  padding: 10px;
+  background-color: #90bce0;
 }
 
 .aboutGrid:hover {
@@ -737,12 +742,12 @@
   text-align: center;
   font-style: italic;
   font-size: 1.3rem;
-  margin-bottom: 2vh;
 }
 .aboutGridContent {
   font-weight: normal;
   display: block;
-  text-align: center;
+  text-align: left;
+  padding: 0.5rem;
 }
 
 /*------------------- Tip --------------------*/
