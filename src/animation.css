@@ -112,13 +112,19 @@
   padding: 15px;
   display: inline-block;
   flex-wrap: wrap;
-  background-color: rgb(55, 64, 68);
+  background-color: rgb(87, 149, 159);
   border-radius: 5px 5px 5px 5px;
   /* background-image: -moz-linear-gradient(right, blue); */
   /* border-width: 1px; */
   /* border-color: #ad771a; */
   color: white;
-  box-shadow: #4a86b7 5px 5px 5px;
+  box-shadow: #798fa2 5px 5px 5px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.PA:hover {
+  scale: 1.1;
 }
 
 /* .PA1 {
@@ -150,10 +156,12 @@
 }
 #pObj {
   flex-wrap: wrap;
+  color: rgb(91, 133, 170);
 }
 
 #programIntro {
   flex-wrap: wrap;
+  color: rgb(255, 255, 255);
 }
 
 #teachItemCont {
@@ -167,11 +175,17 @@
   margin: 20px;
   margin-bottom: 10px;
   text-align: center;
-  background-color: rgba(230, 250, 250, 0.742);
+  background-color: rgba(206, 241, 241, 0.742);
   animation-timing-function: linear;
   animation-timeline: view();
   animation-name: teachItemsAnm;
   padding: 20px;
+
+  transition: all;
+  transition-duration: 200ms;
+}
+.teachItem:hover {
+  scale: 1.1;
 }
 
 @keyframes teachItemsAnm {
@@ -228,8 +242,48 @@
   width: 600px;
   height: 400px;
 }
-s
 
+.GoogleReviewButton {
+  background-color: rgb(255, 255, 255);
+  margin: 2vh;
+  width: 150px;
+  justify-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+  border-radius: 5px 5px 5px;
+  box-shadow: #4a86b7 5px 5px 5px;
+  transition: all;
+  animation-duration: 1000ms;
+  color: #6174a2;
+  text-decoration: none;
+}
+
+.GoogleReviewButton:hover {
+  scale: 1.2;
+  box-shadow: #4a86b7 7px 7px 7px;
+  transition: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  background-color: rgb(95, 94, 94);
+  color: white;
+}
+.GoogleReviewButton > a {
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.GoogleReviewButton > a:visited {
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none;
+  color: inherit;
+}
 /*----------------------------------------story page--------------------------------------- */
 
 .homeSection2 {
@@ -412,6 +466,14 @@ s
   animation-name: LPPBtnAnm;
   animation-duration: 4s;
 }
+.LPGvBtn {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  animation-name: LPPBtnAnm;
+  animation-duration: 4s;
+}
 
 .LPTmBtn {
   font-size: 2rem;
@@ -434,6 +496,12 @@ s
   text-decoration: none;
   border-color: rgb(79, 106, 147);
 }
+.LPGvBtn:hover {
+  color: rgb(8, 175, 25);
+  text-decoration: none;
+  border-color: rgb(8, 175, 25);
+}
+
 .LPTmBtn:hover {
   color: rgb(200, 30, 30);
   text-decoration: none;
@@ -687,4 +755,53 @@ s
   place-content: right;
   place-self: right;
   z-index: 0;
+}
+
+/*------------------- Google Reviews --------------------*/
+
+.GRmain {
+  max-height: 95vh;
+  max-width: 75vh;
+
+  background-color: #90bce0;
+  border-radius: 4px 4px 4px 4px;
+  scroll-behavior: smooth;
+}
+.GRComment {
+  background-color: white;
+  max-width: 600px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  border-radius: 15px 15px 15px 15px;
+  padding: 2rem;
+  transition: all;
+  transition-duration: 300ms;
+}
+.GRComment:hover {
+  scale: 1.05;
+}
+.GRAuthor {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.GRStar {
+}
+
+.GRContent {
+  text-align: justify;
+  font-style: italic;
+}
+
+.GvOs {
+  font-size: 2rem;
+  color: white;
+}
+.GvOsStar {
+  scale: 1.2;
+  justify-content: center;
+}
+.GvOsTotal {
+  font-size: 2rem;
+  color: white;
 }

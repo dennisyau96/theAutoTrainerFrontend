@@ -12,6 +12,7 @@ import PaulClass6 from "../../public/PaulClass6.jpeg";
 import PaulClass7 from "../../public/PaulClass7.jpeg";
 import PaulClass8 from "../../public/PaulClass8.jpeg";
 import PaulClass9 from "../../public/PaulClass9.jpeg";
+import { Link } from "react-router-dom";
 const Program = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,22 +42,16 @@ const Program = () => {
         {/* <h2 className="pt-10 text-white"></h2> */}
 
         <div className=" " id="programDetail">
-          <div className="justify-items-center " id="programPart1">
-            <h3
-              className="text-center py-4 text-white italic flex-wrap flex px-1"
-              id="pObj"
-            >
+          <div className=" " id="programPart1">
+            <h3 className="text-justify py-4  italic  px-1" id="pObj">
               Learn to become a Sucessful Car Salesperson
             </h3>
-            <p
-              className="text-justify text-white flex-wrap flex px-1 "
-              id="programIntro"
-            >
+            <div className="text-justify   px-1 " id="programIntro">
               Our primary focus is to train you with the necessary skill set to
               get you placed for not just a job but a career in the car
               business. We have now placed over 1000 candidates with 250 top
               performers throughout the lower mainland!
-            </p>
+            </div>
 
             <div className="PAScroll">
               <span id="PAB1 " className="PA ">
@@ -129,14 +124,14 @@ const Program = () => {
 
             <div className="Ptip p-2" id="Ptip">
               <h3>Paul’s tips of the day</h3>
-              <div className="m-2 italic text-beige-100">
+              <div className="m-2 italic text-beige-300">
                 The first 10 words you say are more important than your next
                 1,000. Please don't ask a customer if they have been helped when
                 you have seen then stand in your showroom for 5 minutes by
                 themselves.
               </div>
               <hr />
-              <div className="m-2 font-bold text-yellow-100">
+              <div className="m-2 font-bold text-green-200">
                 Never make the mistake of prejudging a potential customer just
                 because they are wearing casual clothing in your dealership.
                 Treat them always like you wanted to be treated and the results
@@ -145,7 +140,7 @@ const Program = () => {
                 crossroads in their career.
               </div>{" "}
               <hr />
-              <div className="m-2 italic text-slate-300">
+              <div className="m-2 italic text-beige-300">
                 No experience or some experience doesn't really matter. We want
                 people to embrace the concepts of building a successful platform
                 through our mentoring and coaching program. More often than not
