@@ -65,9 +65,8 @@ const Program = () => {
               </span>
             </div>
           </div>
-          <div className="ProgramCaro">
-            <Carousel images={images} />
-          </div>
+          <Carousel images={images} />
+
           <div className=" border-black m-10  flex flex-wrap " id="videoCont">
             <div>
               <iframe
@@ -124,16 +123,16 @@ const Program = () => {
               do best.
             </div>
 
-            <div className="Ptip p-2" id="Ptip">
+            <div className="Ptip m2" id="">
               <h3>Paul’s tips of the day</h3>
-              <div className="m-2 italic text-beige-300">
+              <div className=" italic text-beige-300">
                 The first 10 words you say are more important than your next
                 1,000. Please don't ask a customer if they have been helped when
                 you have seen then stand in your showroom for 5 minutes by
                 themselves.
               </div>
               <hr />
-              <div className="m-2 font-bold text-green-200">
+              <div className=" font-bold text-green-200">
                 Never make the mistake of prejudging a potential customer just
                 because they are wearing casual clothing in your dealership.
                 Treat them always like you wanted to be treated and the results
@@ -142,7 +141,7 @@ const Program = () => {
                 crossroads in their career.
               </div>{" "}
               <hr />
-              <div className="m-2 italic text-beige-300">
+              <div className=" italic text-beige-300">
                 No experience or some experience doesn't really matter. We want
                 people to embrace the concepts of building a successful platform
                 through our mentoring and coaching program. More often than not

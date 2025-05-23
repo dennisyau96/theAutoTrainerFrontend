@@ -287,7 +287,6 @@
 .ProgramCaro {
   justify-content: center;
   justify-self: center;
-
   justify-items: center;
   text-align: center;
   place-content: center;
@@ -315,19 +314,6 @@
   place-items: center;
 }
 
-#Ptip {
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  place-content: center;
-  place-self: center;
-  place-items: center;
-  max-width: 95vw;
-  min-width: 200px;
-  flex: auto;
-  flex-wrap: wrap;
-}
 /*----------------------------------------story page--------------------------------------- */
 
 .homeSection2 {
@@ -695,8 +681,15 @@
 .PtipEach {
   animation-name: PtipEach;
   animation-timeline: view();
+  justify-self: center;
   justify-content: center;
   justify-items: center;
+  text-align: center;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+  max-width: 95vw;
+
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(42, 45, 55, 0.492);
