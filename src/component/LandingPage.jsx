@@ -62,12 +62,11 @@ const LandingPage = () => {
         <div id="LPRightHalf" className="inline-block">
           {" "}
           <h1
-            className=" landingPageTitle  pb-10 block cursor-pointer"
+            className=" landingPageTitle  pb-2 block cursor-pointer"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            The Auto Trainer <br />
-            Paul Iacobazzi
+            The Auto Trainer - Paul Iacobazzi
           </h1>
           <div
             className="modal fade transition-all duration-150"

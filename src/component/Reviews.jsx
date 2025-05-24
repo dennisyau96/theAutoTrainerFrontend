@@ -19,7 +19,10 @@ const Reviews = () => {
         </div>
         <div className="col2">
           <button className="GoogleReviewButton">
-            <Link to="https://www.google.com/search?client=safari&rls=en&q=The+Auto+Trainer&ie=UTF-8&oe=UTF-8#">
+            <Link
+              to="https://www.google.com/search?client=safari&rls=en&q=The+Auto+Trainer&ie=UTF-8&oe=UTF-8#"
+              target="-blank"
+            >
               <i className="fa-brands fa-google googleLogo"></i> Reviews
             </Link>
           </button>
@@ -29,7 +32,7 @@ const Reviews = () => {
         </div>
       </div>
 
-      <div className="GRmain overflow-x-auto ">
+      <div className="GRmain overflow-x-auto  py-4">
         <div className="GRComment">
           <div className="GRAuthor">Jarrod Genz</div>
           <div className="GRStar">

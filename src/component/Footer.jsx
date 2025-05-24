@@ -61,7 +61,7 @@ const Footer = () => {
               <i className="fa fa-solid fa-facebook m-2 text-blue-600"></i>
             </Link>
           </div>
-          <div className="text-right h-fit">
+          <div className="text-center h-fit ">
             <a href="#" className="text-xs nav-link hover:text-red-200">
               Back to top
             </a>
