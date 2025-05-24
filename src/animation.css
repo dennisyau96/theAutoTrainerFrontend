@@ -357,7 +357,7 @@
   place-items: left;
   border: none;
   border-radius: 25px;
-  box-shadow: 10px 10px 10px rgb(213, 214, 214);
+  box-shadow: 10px 10px 10px rgb(85, 86, 86);
 }
 
 .storyPicA {
@@ -603,6 +603,38 @@
   }
 }
 
+.tipButton {
+  transition: all;
+  transition-duration: 300ms;
+  color: white;
+  background-color: rgb(55, 55, 55);
+  width: 70px;
+  margin: 2rem;
+  height: 70px;
+  font-size: 2.5rem;
+  border-radius: 50% 50%;
+}
+.tipButton:hover {
+  scale: 1.1;
+  color: black;
+  background-color: rgb(145, 143, 143);
+}
+
+.tipDsp {
+  text-align: justify;
+  place-content: center;
+  place-self: center;
+  place-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  max-width: 500px;
+  width: 90vw;
+}
+
 /*-----------------------testimonial-------------------------*/
 
 /*Testimonial*/
@@ -734,8 +766,10 @@
   max-width: 500px;
   place-self: center;
   text-align: justify;
-  margin: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 0.5rem;
   color: white;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   flex-wrap: wrap;
 }
