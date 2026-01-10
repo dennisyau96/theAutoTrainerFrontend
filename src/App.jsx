@@ -14,6 +14,7 @@ import Maintenance from "./component/Maintenance";
 import Tip from "./component/Tip";
 
 import "./App.css";
+import "./style.css";
 import "./animation.css";
 import Nav from "./component/Nav";
 

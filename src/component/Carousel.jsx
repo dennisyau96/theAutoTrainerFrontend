@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../src/index.css"; // Optional for styling
+import "../../src/style.css"; // Optional for styling
 
 const Carousel = ({ images, autoPlay = true, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
