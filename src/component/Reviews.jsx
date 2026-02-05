@@ -9,11 +9,11 @@ const Reviews = () => {
         <div className="col1">
           <span className="GvOs">5.0</span>
           <span className="GvOsStar flex flex-wrap gap-2">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </span>
           <span className="GvOsTotal">171 reviews</span>
         </div>
@@ -21,7 +21,8 @@ const Reviews = () => {
           <button className="GoogleReviewButton">
             <Link
               to="https://www.google.com/search?client=safari&rls=en&q=The+Auto+Trainer&ie=UTF-8&oe=UTF-8#"
-              target="-blank"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fa-brands fa-google googleLogo"></i> Reviews
             </Link>
@@ -36,11 +37,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Jarrod Genz</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             Paul was an amazing instructor and I learned a lot from his course.
@@ -55,11 +56,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Dennis</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             Never regret taking this course with Paul. This is not just a Auto
@@ -78,11 +79,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Rory Ford-McNicol</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             Paul is an incredible coach. His in-person training and online
@@ -95,11 +96,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Tamas Kovacs</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             I did training both online and in person with Paul and there isn’t
@@ -116,11 +117,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Kurt McLaws</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             I met Paul back in 2015 when I was looking for a career change. I
@@ -143,11 +144,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Brian Lau</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             I would strongly recommend Paul's course to anyone considering to
@@ -164,11 +165,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Joel K</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             I can’t say enough amazing things about Paul personally, and the
@@ -188,11 +189,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Richard C</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             I took Paul's course back in February of this year and its the best
@@ -216,11 +217,11 @@ const Reviews = () => {
         <div className="GRComment">
           <div className="GRAuthor">Bianca Ho</div>
           <div className="GRStar">
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
-            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
+            <i className="fa-solid fa-star text-yellow-400"></i>
           </div>
           <div className="GRContent">
             Taking the Auto Trainer course with Paul has definitely been a life

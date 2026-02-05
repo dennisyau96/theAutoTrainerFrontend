@@ -35,15 +35,13 @@ const App = () => {
 
         <div id="mainContent" className=" h-100 bg-black">
           <Routes>
-            <Route path="/">
-              <Route index element={<Home />} />
-              <Route path="/*" element={<Home />} />
-              <Route path="/home-2/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/testimonials" element={<Testimonials />} />
-              <Route path="/reviews" element={<Reviews />} />
-              <Route path="/programs" element={<Program />} />
-            </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/home-2/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/programs" element={<Program />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
 

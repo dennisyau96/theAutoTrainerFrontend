@@ -3,29 +3,20 @@ import { programAdvantages } from "../assets/data";
 import { useEffect } from "react";
 import programAdvantageCard from "../lego/programAdvantageCard";
 import Carousel from "./Carousel";
-import PaulClass1 from "../../public/PaulClass1.png";
-import PaulClass2 from "../../public/PaulClass2.jpeg";
-import PaulClass3 from "../../public/PaulClass3.jpeg";
-import PaulClass4 from "../../public/PaulClass4.jpeg";
-import PaulClass5 from "../../public/PaulClass5.jpeg";
-import PaulClass6 from "../../public/PaulClass6.jpeg";
-import PaulClass7 from "../../public/PaulClass7.jpeg";
-import PaulClass8 from "../../public/PaulClass8.jpeg";
-import PaulClass9 from "../../public/PaulClass9.jpeg";
 import { Link } from "react-router-dom";
 const Program = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
   const images = [
-    PaulClass1,
-    PaulClass2,
-    PaulClass3,
-    PaulClass4,
-    PaulClass6,
-    PaulClass7,
-    PaulClass8,
-    PaulClass9,
+    "/PaulClass1.png",
+    "/PaulClass2.jpeg",
+    "/PaulClass3.jpeg",
+    "/PaulClass4.jpeg",
+    "/PaulClass6.jpeg",
+    "/PaulClass7.jpeg",
+    "/PaulClass8.jpeg",
+    "/PaulClass9.jpeg",
   ];
 
   return (
@@ -148,7 +139,7 @@ const Program = () => {
                 className="inline-block m-4"
                 title="The Auto Trainer Sales Seminar"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div>

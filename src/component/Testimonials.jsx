@@ -17,7 +17,7 @@ const Testimonials = () => {
         >
           <div className="carousel-item active">
             <img
-              src="../../DerekLau.png"
+              src="/DerekLau.png"
               className="d-block w-100"
               alt="Derek Lau(Capilano Volkswagen)"
             />
@@ -36,7 +36,7 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="../../DavidHan.png"
+              src="/DavidHan.png"
               className="d-block w-100"
               alt="David Han(Destination Mazda)"
             />
@@ -60,7 +60,7 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="../../JeffPolo.jpeg"
+              src="/JeffPolo.jpeg"
               className="d-block w-100"
               alt="...1"
             />
@@ -82,7 +82,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="../../Morris.jpeg" className="d-block w-100" alt="...1" />
+            <img src="/Morris.jpeg" className="d-block w-100" alt="...1" />
             <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Morris Lubinich</span>
               <br />
@@ -102,7 +102,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="../../Peter.png" className="d-block w-100" alt="...1" />
+            <img src="/Peter.png" className="d-block w-100" alt="...1" />
             <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Peter Vethanayagam</span>
               <br />
@@ -123,7 +123,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="../../Cedric.png" className="d-block w-100" alt="...1" />
+            <img src="/Cedric.png" className="d-block w-100" alt="...1" />
             <div className="text-center BGcolor4 py-1  align-content-center">
               <span className="ttname">Cedric Gagne</span>
               <br />
@@ -142,7 +142,7 @@ const Testimonials = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="../../IanQuinn.jpeg"
+              src="/IanQuinn.jpeg"
               className="d-block w-100"
               alt="...1"
             />

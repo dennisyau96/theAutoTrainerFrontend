@@ -19,7 +19,7 @@ const Home = () => {
             id="story1"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../Essiano Majidi.JPEG" alt="" className=" storyImg" />
+            <img src="/Essiano Majidi.JPEG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Essiano Majidi</span>
               <span className="storyDealership block">Capilano VW</span>
@@ -35,7 +35,7 @@ const Home = () => {
             id="story2"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../Alex Nguyen.JPG" alt="" className=" storyImg" />
+            <img src="/Alex Nguyen.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Alex Nguyen</span>
               <span className="storyDealership block">Carter GM</span>
@@ -73,7 +73,7 @@ const Home = () => {
             id="story4"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../NavGarg.JPG" alt="" className=" storyImg" />
+            <img src="/NavGarg.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Nav Garg</span>
               <span className="storyDealership block">Capilano Audi</span>
@@ -89,7 +89,7 @@ const Home = () => {
             id="story5"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../SarahGreen.jpeg" alt="" className=" storyImg" />
+            <img src="/SarahGreen.jpeg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Sarah Green</span>
               <span className="storyDealership block">Capilano VW</span>
@@ -101,7 +101,7 @@ const Home = () => {
             </div>
           </div>
           <div id="story6" className="sucessfulStory ">
-            <img src="../../PeggyWu.jpeg" alt="" className=" storyImg" />
+            <img src="/PeggyWu.jpeg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Peggy Wu</span>
               <span className="storyDealership block">Regency Toyota</span>
@@ -118,7 +118,7 @@ const Home = () => {
             id="story7"
             className="sucessfulStory  flex flex-wrap justify-content-center"
           >
-            <img src="../../Levi.jpg" alt="" className=" storyImg" />
+            <img src="/Levi.jpg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Levi Generale</span>
               <span className="storyDealership block">Regency Toyota</span>
@@ -136,7 +136,7 @@ const Home = () => {
             id="story8"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../CurtisKmyta.JPG" alt="" className=" storyImg" />
+            <img src="/CurtisKmyta.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Curtis Kmyta</span>
               <span className="storyDealership block">Valley Toyota</span>
@@ -154,7 +154,7 @@ const Home = () => {
             id="story9"
             className="sucessfulStory flex flex-wrap justify-content-center "
           >
-            <img src="../../PeterVetra.JPG" alt="" className=" storyImg" />
+            <img src="/PeterVetra.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Peter Vetra</span>
               <span className="storyDealership block">White Rock Hyundai</span>
@@ -171,7 +171,7 @@ const Home = () => {
             id="story10"
             className="sucessfulStory flex flex-wrap justify-content-center "
           >
-            <img src="../../AaronLi.JPG" alt="" className=" storyImg" />
+            <img src="/AaronLi.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Aaron Li</span>
               <span className="storyDealership block">Capilano Audi</span>
@@ -189,12 +189,12 @@ const Home = () => {
           >
             <span className="flex flex-wrap justify-content-center">
               <img
-                src="../../FrankFang.JPG"
+                src="/FrankFang.JPG"
                 alt=""
                 className="max-h-70 min-h-auto storyImg"
               ></img>
               <img
-                src="../../FrankFang2.JPG"
+                src="/FrankFang2.JPG"
                 alt=""
                 className="max-h-70 min-h-auto mt-2 storyImg"
               />
@@ -217,7 +217,7 @@ const Home = () => {
             id="story12"
             className="sucessfulStory flex flex-wrap justify-content-center"
           >
-            <img src="../../DestineeBotchar.JPG" alt="" className=" storyImg" />
+            <img src="/DestineeBotchar.JPG" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Destinee Botchar</span>
               <span className="storyDealership block">Acura of Langley</span>
@@ -233,7 +233,7 @@ const Home = () => {
             id="story13"
             className="sucessfulStory flex flex-wrap justify-content-center "
           >
-            <img src="../../RomanIacobazzi.jpg" alt="" className=" storyImg" />
+            <img src="/RomanIacobazzi.jpg" alt="" className=" storyImg" />
             <div>
               <span className="storyName block">Roman Iacobazzi</span>
               <span className="storyDealership block">Destination Mazda</span>

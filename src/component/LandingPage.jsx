@@ -10,10 +10,10 @@ const LandingPage = () => {
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       ></i> */}
-      <sction id="landingPage" className="flex-wrap flex">
+      <section id="landingPage" className="flex-wrap flex">
         <div id="LPLeftHalf" className="inline-block">
           <img
-            src="../../PaulAndJim.jpeg"
+            src="/PaulAndJim.jpeg"
             className="z-2 w-auto justify-content-center justify-self-center hover:cursor-pointer hover:scale-105 rounded transition duration-150 "
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -68,46 +68,6 @@ const LandingPage = () => {
           >
             The Auto Trainer - Paul Iacobazzi
           </h1>
-          <div
-            className="modal fade transition-all duration-150"
-            id="exampleModal"
-            // tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h1 className="modal-title fs-5" id="exampleModalLabel">
-                    Paul Iacobazzi with Jimmy Pattison
-                  </h1>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="modal-body text-left">
-                  After 20 wonderful years as a Sales Manager in the auto
-                  industry I opted to chase my dream of building my own business
-                  as President of my own company The Auto Trainer. It was
-                  wonderful to chat with Jimmy about his passion for the auto
-                  business and how he was always motivated by our wonderful
-                  industry.
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
           <div
             className="LPintroPara relative grid-rows-1 gap-0 grid align-content-center cursor-pointer "
             data-bs-toggle="modal"
@@ -170,7 +130,7 @@ const LandingPage = () => {
             </div>
           </button>
         </div>
-      </sction>
+      </section>
     </div>
   );
 };
